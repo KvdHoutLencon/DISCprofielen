@@ -22,7 +22,40 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-function renderQuestion(q) {
+// Deterministische hash -> seed, zodat regenereren dezelfde shuffle-uitkomst geeft
+// zolang de brondata niet wijzigt (stabiele/reviewbare output).
+function hashSeed(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let a = seed;
+  return function () {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffledOptions(fnKey, q) {
+  const rng = mulberry32(hashSeed(fnKey + '-' + q.number));
+  const shuffled = q.options.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  const letters = ['A', 'B', 'C', 'D'];
+  return shuffled.map((o, idx) => ({ letter: letters[idx], text: o.text, disc: o.disc }));
+}
+
+function renderQuestionHtml(q) {
   const optionRows = q.options
     .map(
       (o) => `
@@ -53,9 +86,15 @@ function renderQuestion(q) {
 }
 
 function renderTemplate(fn) {
-  const questionsHtml = fn.questions.map(renderQuestion).join('\n');
+  const shuffledQuestions = fn.questions.map((q) => ({
+    number: q.number,
+    stem: q.stem,
+    options: shuffledOptions(fn.key, q),
+  }));
+
+  const questionsHtml = shuffledQuestions.map(renderQuestionHtml).join('\n');
   const questionsDataJson = JSON.stringify(
-    fn.questions.map((q) => ({
+    shuffledQuestions.map((q) => ({
       number: q.number,
       options: q.options.map((o) => ({ letter: o.letter, disc: o.disc })),
     }))
