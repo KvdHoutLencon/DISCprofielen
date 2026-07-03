@@ -1,0 +1,3691 @@
+[
+  {
+    "key": "engineer",
+    "title": "Engineer (projectteam)",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke werkstijl als engineer binnen een projectteam, zodat samenwerking en communicatie in het team beter aansluiten.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuw ontwerpproject reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct beginnen met tekenen/rekenen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast het team meekrijgen in de aanpak",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat iedereen zich comfortabel voelt met de opdracht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de specificaties en kaders goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een deadline voor een tekening of berekening onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een projectoverleg met het hele team:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of aannames kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in werkwijze of ontwerptools:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om dingen te verbeteren",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met collega's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig technisch probleem in je ontwerp:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel collega's voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een collega-engineer het niet eens is met jouw ontwerpkeuze:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met berekeningen/feiten",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je eigen engineeringwerk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd stappenplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over andermans ontwerp:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke/technische onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er een fout in een berekening of tekening naar boven komt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met andere disciplines (bijv. industrial design):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en input kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuwe technische opdracht zonder duidelijke instructie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder werkdruk in een project merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het toelichten van je ontwerp aan het team:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op je technisch werk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van ontwerpkeuzes:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met anderen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een teamgenoot een fout maakt die jouw onderdeel raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek met collega-engineers al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, resultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Technische details of nieuwtjes",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om technische hulp vraagt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele teamapp of -overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "projectleider",
+    "title": "Projectleider (klantcontact)",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke stijl als projectleider, met focus op sturing, klantcontact en samenwerking met het projectteam.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuw project met een klant reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct de kaders en planning neerzetten, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast het team en de klant meekrijgen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat iedereen zich comfortabel voelt bij de opdracht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de opdracht en scope goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een projectdeadline richting de klant onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een voortgangsoverleg met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of besluiten kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in de scope of aanpak van een lopend project:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om het beter te maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met team en klant",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig inhoudelijk of planningsprobleem in het project:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel het team voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een klant het ergens niet mee eens is:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met feiten",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van het project:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd stappenplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over het werk van teamleden:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er iets misgaat in het project richting de klant:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met engineers en andere disciplines:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en input kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuw project zonder volledig duidelijke opdracht:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid van de klant",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder druk van meerdere lopende projecten merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het presenteren van de projectvoortgang aan de klant:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt van een klant of directie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes binnen het project:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met het team",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een teamlid een fout maakt die de klantrelatie raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, projectresultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Feiten, planning of details",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om hulp vraagt bij een project:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp met het team:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "assembly",
+    "title": "Assembly Engineer",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke werkstijl als assembly engineer, gericht op precisiewerk en samenwerking op de werkvloer.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuwe assemblageklus reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct beginnen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast de collega's op de werkvloer meekrijgen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat iedereen zich comfortabel voelt met de klus",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de tekening en instructies goed doornemen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een opleverdeadline op de werkvloer onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een werkoverleg met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of afspraken kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in werkinstructies of montagevolgorde:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om het efficiënter te maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met collega's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig technisch probleem tijdens de montage:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel collega's voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een collega het niet eens is met jouw manier van monteren:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met de tekening/instructie",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je eigen montagewerkzaamheden:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare werkvolgorde",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd stappenplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over andermans montagewerk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke/technische onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er tijdens de assemblage iets misgaat:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met engineering en projectleiding:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie op de werkvloer",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en tekeningen kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuwe montageklus zonder volledig duidelijke instructie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder werkdruk op de werkvloer merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het toelichten van je montageresultaat aan collega's of leiding:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op je montagewerk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes tijdens het assembleren:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met anderen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een collega een fout maakt die jouw onderdeel van de montage raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Op de werkvloer, tijdens een pauze, gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, de klus zelf",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Technische details of nieuwtjes",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om hulp vraagt bij het monteren:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp met collega's:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "sales",
+    "title": "Business Development / Sales",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke stijl in klantcontact, acquisitie en het opbouwen van zakelijke relaties.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuw acquisitietraject reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct de klant benaderen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast het netwerk inzetten",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat het contact op zijn gemak is",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de markt en klantbehoefte goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een dealdeadline onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een salesoverleg met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of cijfers kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in de marktbenadering of dienstverlening:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om meer te scoren",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met collega's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastige onderhandeling met een prospect:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel collega's voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een klant het ergens niet mee eens is:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met feiten en cijfers",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je eigen acquisitie-activiteiten:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane kansen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare aanpak",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd salesplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over een offerte of voorstel van een collega:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als een deal dreigt mis te lopen:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met projectleiding en engineering bij een offerte:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en input kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuwe leadopdracht zonder volledig duidelijke informatie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder druk van een salesdoelstelling merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het presenteren van een voorstel aan een klant:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op een salesgesprek of voorstel:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes over welke klant of markt je opzoekt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met anderen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een collega een fout maakt die de klantrelatie raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel, netwerkevent of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, deals en resultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Feiten, marktnieuws of details",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om hulp vraagt bij een klantvraag:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp of overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "office",
+    "title": "Office Management",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke werkstijl binnen office management, gericht op organisatie en ondersteuning van collega's.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuwe organisatorische taak reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct beginnen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast collega's meekrijgen in de aanpak",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat iedereen zich comfortabel voelt",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de taak en gewenste uitkomst goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een deadline voor een administratieve of organisatorische taak onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een vergadering met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of afspraken kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in werkprocessen of systemen op kantoor:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om dingen te verbeteren",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met collega's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig organisatorisch probleem (bijv. planning, inkoop, facilitair):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel collega's voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een collega het ergens niet mee eens is over een werkafspraak:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met feiten",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je eigen werk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd stappenplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over hoe een collega iets organiseert:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er iets misgaat in de dagelijkse organisatie op kantoor:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met andere afdelingen:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en input kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuwe taak zonder duidelijke instructie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder werkdruk merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het toelichten van een nieuwe werkwijze aan collega's:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op je werk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes in je werk (bijv. leverancier, systeem):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met anderen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een collega een fout maakt die jouw planning of proces raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, resultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Feiten, nieuws of details",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om hulp vraagt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp of overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "hr",
+    "title": "HR Management",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke stijl in de omgang met mensen, conflicten en beleid binnen HR.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuw HR-vraagstuk reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct actie ondernemen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast collega's meekrijgen in de aanpak",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat betrokkenen zich comfortabel voelen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst het vraagstuk en de kaders goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een deadline voor een HR-traject (bijv. werving, beoordeling) onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een vergadering met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of besluiten kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in HR-beleid of arbeidsvoorwaarden:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om dingen te verbeteren",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met collega's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig personeelsvraagstuk (bijv. conflict, verzuim):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel collega's voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een medewerker het ergens niet mee eens is:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met feiten en beleid",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je eigen HR-werkzaamheden:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd stappenplan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over hoe een leidinggevende iets aanpakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er een conflict of incident tussen medewerkers ontstaat:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met leidinggevenden bij personeelszaken:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en dossiers kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuw HR-vraagstuk zonder volledig duidelijke kaders:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder werkdruk (bijv. meerdere gesprekken/dossiers tegelijk) merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het presenteren van HR-beleid of -resultaten aan het team:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op je aanpak van een personeelskwestie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes in personeelszaken (bijv. aanname, beoordeling):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met anderen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een leidinggevende een fout maakt die een medewerker raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of teamuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, resultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Feiten, nieuws of details",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om een luisterend oor of advies vraagt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp of overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "directeur",
+    "title": "Algemeen Directeur",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke leiderschaps- en besluitvormingsstijl als algemeen directeur.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij de start van een nieuwe strategische koers reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Direct de richting bepalen, tempo maken",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Enthousiast het bedrijf meekrijgen in het verhaal",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Eerst zorgen dat iedereen zich comfortabel voelt bij de verandering",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Eerst de markt en cijfers goed uitzoeken",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een belangrijke deadline (bijv. richting aandeelhouders/bank) onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik knopen door, ook als dat schuurt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik improviserend naar een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik kalm en werk ik het rustig af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst wat er precies misging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een vergadering met het hele bedrijf die jij leidt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik direct wat ik ergens van vind",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op feiten en of besluiten kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in de bedrijfsstrategie of -structuur:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zie ik als kans om dingen te verbeteren",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Bespreek ik enthousiast met het managementteam",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik lastig als het te snel gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastig strategisch of financieel vraagstuk:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Pak ik het zelf voortvarend op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Betrek ik snel het managementteam voor input",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Werk ik het rustig en gestructureerd af",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ga ik grondig en methodisch te werk",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een belangrijke klant of partner het ergens niet mee eens is:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik meteen waar ik sta",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Probeer ik het gesprek luchtig te houden",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Zoek ik naar een compromis",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Onderbouw ik mijn standpunt met feiten en cijfers",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van de koers van het bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Laat ik ruimte voor spontane kansen",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Houd ik vast aan een vaste, voorspelbare koers",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Maak ik een gedetailleerd strategisch plan",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over het werk van een leidinggevende:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zeg ik zonder omwegen wat beter kan",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Benoem ik vooral wat goed gaat",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Focus ik op feitelijke onjuistheden",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als er iets misgaat op bedrijfsniveau (bijv. groot project of klant):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Grijp ik meteen in",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik naar een creatieve oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Analyseer ik eerst de oorzaak",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met het managementteam:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik snel de regie",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Pas ik me makkelijk aan anderen aan",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Let ik op dat afspraken en cijfers kloppen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuw vraagstuk zonder volledig duidelijke kaders:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ga ik gewoon aan de slag",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Wacht ik liever op duidelijkheid",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zoek ik eerst uit hoe het hoort",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder druk van de eindverantwoordelijkheid merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om fouten te voorkomen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het presenteren van resultaten of strategie aan het bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ben ik rustig en to-the-point",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt (bijv. van een commissaris, aandeelhouder of team):",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Waardeer ik het als het positief gebracht wordt",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van strategische keuzes voor het bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op eigen inzicht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik graag eerst met het managementteam",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik de tijd, stap voor stap",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een leidinggevende een fout maakt die het bedrijf raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er fout ging",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of bedrijfsuitje:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor gezelligheid en energie",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Sta ik er wat afwachtend/observerend bij",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, resultaten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ervaringen en anekdotes",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Hoe het met mensen persoonlijk gaat",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Feiten, nieuws of details",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een medewerker je spontaan om advies of hulp vraagt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook een gezellig moment van",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed begrijpen",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp of overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik humor en emoji's",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  }
+]

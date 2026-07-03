@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISC-vragenlijst — Assembly Engineer</title>
+<style>
+  :root {
+    --color-bg: #f4f6f8;
+    --color-surface: #ffffff;
+    --color-border: #d7dce1;
+    --color-text: #1f2933;
+    --color-muted: #5c6773;
+    --color-primary: #1f4e5f;
+    --color-primary-dark: #163a47;
+    --color-accent: #2f855a;
+    --color-error: #b3261e;
+    --color-error-bg: #fdecea;
+    --radius: 6px;
+    font-size: 16px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+  header.app-header {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 1.5rem 1.25rem;
+  }
+  header.app-header .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header.app-header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  header.app-header p {
+    margin: 0;
+    color: #dce7ea;
+    font-size: 0.92rem;
+  }
+  .progress-bar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.75rem 1.25rem;
+  }
+  .progress-bar-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .progress-track {
+    flex: 1;
+    height: 8px;
+    background: #e3e8ec;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--color-accent);
+    width: 0%;
+    transition: width 0.2s ease;
+  }
+  .progress-label {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+    min-width: 9.5em;
+    text-align: right;
+  }
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--color-primary-dark);
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 640px) {
+    .meta-grid { grid-template-columns: 1fr; }
+  }
+  .field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+    color: var(--color-muted);
+  }
+  .field input {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    background: #fff;
+    color: var(--color-text);
+  }
+  .field input:disabled {
+    background: #eef1f3;
+    color: var(--color-muted);
+  }
+  fieldset.question {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem 1.1rem;
+    margin: 0 0 1.25rem;
+    background: var(--color-surface);
+  }
+  fieldset.question.incomplete {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 1px var(--color-error);
+  }
+  fieldset.question legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0 0.4rem;
+    font-weight: 600;
+  }
+  .qnum {
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .qstem {
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+  }
+  .option-row {
+    display: grid;
+    grid-template-columns: 1.75rem 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: #fafbfc;
+  }
+  @media (max-width: 640px) {
+    .option-row {
+      grid-template-columns: 1.5rem 1fr;
+    }
+    .option-radios { grid-column: 1 / -1; }
+  }
+  .option-letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .option-text {
+    font-size: 0.95rem;
+  }
+  .option-radios {
+    display: flex;
+    gap: 1rem;
+  }
+  .radio-choice {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.82rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .radio-choice input {
+    cursor: pointer;
+  }
+  .question-error {
+    display: none;
+    margin: 0.6rem 0 0;
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  fieldset.question.incomplete .question-error {
+    display: block;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  #save-btn {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #save-btn:hover {
+    background: var(--color-primary-dark);
+  }
+  #global-error {
+    display: none;
+    background: var(--color-error-bg);
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+  #global-error.visible { display: block; }
+  #global-error ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+  }
+  #save-success {
+    display: none;
+    background: #e6f4ea;
+    color: #1e4620;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+  #save-success.visible { display: block; }
+  footer {
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 0.8rem;
+    padding: 1.5rem 0 0;
+  }
+</style>
+</head>
+<body>
+<header class="app-header">
+  <div class="header-inner">
+    <h1>DISC-vragenlijst — Assembly Engineer</h1>
+    <p>Deze vragenlijst geeft inzicht in je natuurlijke werkstijl als assembly engineer, gericht op precisiewerk en samenwerking op de werkvloer.</p>
+  </div>
+</header>
+
+<div class="progress-bar-wrap">
+  <div class="progress-bar-inner">
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="progress-label" id="progress-label">0 van 20 ingevuld</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card">
+    <h2>Gegevens</h2>
+    <div class="meta-grid">
+      <div class="field">
+        <label for="input-naam">Naam</label>
+        <input type="text" id="input-naam" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="input-functie">Functie</label>
+        <input type="text" id="input-functie" value="Assembly Engineer" disabled>
+      </div>
+      <div class="field">
+        <label for="input-datum">Datum</label>
+        <input type="date" id="input-datum" required>
+      </div>
+    </div>
+  </div>
+
+  <div id="global-error" role="alert">
+    <strong>Niet alle vragen zijn volledig ingevuld.</strong>
+    <span id="global-error-detail"></span>
+  </div>
+
+  <div id="save-success" role="status">
+    De vragenlijst is opgeslagen en het CSV-bestand is gedownload.
+  </div>
+
+  <form id="disc-form">
+
+        <fieldset class="question" id="question-1" data-qnum="1">
+          <legend><span class="qnum">Vraag 1</span><span class="qstem">Bij de start van een nieuwe assemblageklus reageer je het liefst:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Direct beginnen, tempo maken</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Enthousiast de collega&#39;s op de werkvloer meekrijgen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Eerst zorgen dat iedereen zich comfortabel voelt met de klus</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Eerst de tekening en instructies goed doornemen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q1_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-2" data-qnum="2">
+          <legend><span class="qnum">Vraag 2</span><span class="qstem">Als een opleverdeadline op de werkvloer onder druk komt te staan:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Neem ik knopen door, ook als dat schuurt</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Zoek ik improviserend naar een oplossing</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Blijf ik kalm en werk ik het rustig af</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Analyseer ik eerst wat er precies misging</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q2_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-3" data-qnum="3">
+          <legend><span class="qnum">Vraag 3</span><span class="qstem">In een werkoverleg met het hele bedrijf:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Zeg ik direct wat ik ergens van vind</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Breng ik energie en luchtigheid in het gesprek</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Luister ik vooral en sluit ik me aan bij de groep</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Let ik op feiten en of afspraken kloppen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q3_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-4" data-qnum="4">
+          <legend><span class="qnum">Vraag 4</span><span class="qstem">Verandering in werkinstructies of montagevolgorde:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Zie ik als kans om het efficiënter te maken</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Bespreek ik enthousiast met collega&#39;s</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Vind ik lastig als het te snel gaat</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Wil ik eerst goed doorgronden voor ik meega</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q4_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-5" data-qnum="5">
+          <legend><span class="qnum">Vraag 5</span><span class="qstem">Bij een lastig technisch probleem tijdens de montage:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Pak ik het zelf voortvarend op</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Betrek ik snel collega&#39;s voor input</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Werk ik het rustig en gestructureerd af</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Ga ik grondig en methodisch te werk</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q5_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-6" data-qnum="6">
+          <legend><span class="qnum">Vraag 6</span><span class="qstem">Als een collega het niet eens is met jouw manier van monteren:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Zeg ik meteen waar ik sta</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Probeer ik het gesprek luchtig te houden</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Zoek ik naar een compromis</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Onderbouw ik mijn standpunt met de tekening/instructie</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q6_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-7" data-qnum="7">
+          <legend><span class="qnum">Vraag 7</span><span class="qstem">Bij het plannen van je eigen montagewerkzaamheden:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Stel ik zelf prioriteiten, zonder veel overleg</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Laat ik ruimte voor spontane aanpassingen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Houd ik vast aan een vaste, voorspelbare werkvolgorde</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Maak ik een gedetailleerd stappenplan</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q7_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-8" data-qnum="8">
+          <legend><span class="qnum">Vraag 8</span><span class="qstem">Bij het geven van je mening over andermans montagewerk:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Zeg ik zonder omwegen wat beter kan</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Benoem ik vooral wat goed gaat</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Ben ik voorzichtig om de relatie niet te schaden</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Focus ik op feitelijke/technische onjuistheden</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q8_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-9" data-qnum="9">
+          <legend><span class="qnum">Vraag 9</span><span class="qstem">Als er tijdens de assemblage iets misgaat:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Grijp ik meteen in</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Zoek ik naar een creatieve oplossing</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Blijf ik rustig en werk ik het stap voor stap op</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Analyseer ik eerst de oorzaak</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q9_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-10" data-qnum="10">
+          <legend><span class="qnum">Vraag 10</span><span class="qstem">In samenwerking met engineering en projectleiding:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Neem ik snel de regie op de werkvloer</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Zoek ik verbinding en gezamenlijke energie</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Pas ik me makkelijk aan anderen aan</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Let ik op dat afspraken en tekeningen kloppen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q10_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-11" data-qnum="11">
+          <legend><span class="qnum">Vraag 11</span><span class="qstem">Bij een nieuwe montageklus zonder volledig duidelijke instructie:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Ga ik gewoon aan de slag</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Vraag ik enthousiast rond wat de bedoeling is</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Wacht ik liever op duidelijkheid</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Zoek ik eerst uit hoe het hoort</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q11_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-12" data-qnum="12">
+          <legend><span class="qnum">Vraag 12</span><span class="qstem">Onder werkdruk op de werkvloer merk je dat je:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Sneller ongeduldig wordt</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Toch positief probeert te blijven</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Behoefte hebt aan rust en overzicht</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Extra secuur wordt om fouten te voorkomen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q12_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-13" data-qnum="13">
+          <legend><span class="qnum">Vraag 13</span><span class="qstem">Bij het toelichten van je montageresultaat aan collega&#39;s of leiding:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Ben ik kort en krachtig</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Maak ik het levendig en enthousiasmerend</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Ben ik rustig en to-the-point</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Zorg ik dat alles feitelijk klopt en compleet is</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q13_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-14" data-qnum="14">
+          <legend><span class="qnum">Vraag 14</span><span class="qstem">Als je feedback krijgt op je montagewerk:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Wil ik vooral weten wat beter kan, snel door</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Waardeer ik het als het positief gebracht wordt</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Vind ik een persoonlijke, rustige toon prettig</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Wil ik het onderbouwd en concreet</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q14_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-15" data-qnum="15">
+          <legend><span class="qnum">Vraag 15</span><span class="qstem">Bij het maken van keuzes tijdens het assembleren:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Beslis ik snel, op eigen inzicht</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Overleg ik graag eerst met anderen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Neem ik de tijd, stap voor stap</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Wil ik eerst alle informatie op een rij hebben</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q15_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-16" data-qnum="16">
+          <legend><span class="qnum">Vraag 16</span><span class="qstem">Als een collega een fout maakt die jouw onderdeel van de montage raakt:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Geef ik er direct een korte, duidelijke terugkoppeling op</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Blijf ik luchtig en zoek ik samen een oplossing</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Laat ik het meestal rusten om de sfeer goed te houden</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Wijs ik precies aan wat er fout ging</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q16_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-17" data-qnum="17">
+          <legend><span class="qnum">Vraag 17</span><span class="qstem">Tijdens een borrel of teamuitje:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Ben ik al snel het middelpunt qua initiatief</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Zorg ik voor gezelligheid en energie</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Heb ik het liefst rustige gesprekken met een paar mensen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Sta ik er wat afwachtend/observerend bij</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q17_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-18" data-qnum="18">
+          <legend><span class="qnum">Vraag 18</span><span class="qstem">Op de werkvloer, tijdens een pauze, gaat een gesprek al snel over:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Concrete zaken, de klus zelf</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Ervaringen en anekdotes</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Hoe het met mensen persoonlijk gaat</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Technische details of nieuwtjes</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q18_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-19" data-qnum="19">
+          <legend><span class="qnum">Vraag 19</span><span class="qstem">Als een collega je spontaan om hulp vraagt bij het monteren:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Help ik kort en doelgericht</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Maak ik er ook een gezellig moment van</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Neem ik er rustig de tijd voor</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Wil ik het probleem eerst goed begrijpen</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q19_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="question" id="question-20" data-qnum="20">
+          <legend><span class="qnum">Vraag 20</span><span class="qstem">In een informele groepsapp met collega&#39;s:</span></legend>
+          <div class="option-list">
+              <label class="option-row" data-letter="A">
+                <span class="option-letter">A</span>
+                <span class="option-text">Stuur ik vooral korte, duidelijke berichten</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_meest" value="A" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_minst" value="A" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="B">
+                <span class="option-letter">B</span>
+                <span class="option-text">Gebruik ik humor en emoji&#39;s</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_meest" value="B" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_minst" value="B" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="C">
+                <span class="option-letter">C</span>
+                <span class="option-text">Reageer ik weinig, maar lees ik alles rustig mee</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_meest" value="C" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_minst" value="C" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+              <label class="option-row" data-letter="D">
+                <span class="option-letter">D</span>
+                <span class="option-text">Stuur ik vooral als er iets feitelijk te corrigeren is</span>
+                <span class="option-radios">
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_meest" value="D" data-role="meest">
+                    <span>Meest</span>
+                  </label>
+                  <label class="radio-choice">
+                    <input type="radio" name="q20_minst" value="D" data-role="minst">
+                    <span>Minst</span>
+                  </label>
+                </span>
+              </label>
+          </div>
+          <p class="question-error" role="alert"></p>
+        </fieldset>
+
+    <div class="actions">
+      <button type="submit" id="save-btn">Opslaan</button>
+    </div>
+  </form>
+
+  <footer>DISC-vragenlijst &middot; Assembly Engineer</footer>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var FUNCTION_KEY = "assembly";
+  var FUNCTION_TITLE = "Assembly Engineer";
+  var QUESTIONS = [{"number":1,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":2,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":3,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":4,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":5,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":6,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":7,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":8,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":9,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":10,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":11,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":12,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":13,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":14,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":15,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":16,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":17,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":18,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":19,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]},{"number":20,"options":[{"letter":"A","disc":"D"},{"letter":"B","disc":"I"},{"letter":"C","disc":"S"},{"letter":"D","disc":"C"}]}];
+
+  var form = document.getElementById('disc-form');
+  var progressFill = document.getElementById('progress-fill');
+  var progressLabel = document.getElementById('progress-label');
+  var globalError = document.getElementById('global-error');
+  var globalErrorDetail = document.getElementById('global-error-detail');
+  var saveSuccess = document.getElementById('save-success');
+  var dateInput = document.getElementById('input-datum');
+
+  function todayIso() {
+    var d = new Date();
+    var mm = String(d.getMonth() + 1).padStart(2, '0');
+    var dd = String(d.getDate()).padStart(2, '0');
+    return d.getFullYear() + '-' + mm + '-' + dd;
+  }
+  dateInput.value = todayIso();
+
+  function getAnswer(qnum) {
+    var meest = form.querySelector('input[name="q' + qnum + '_meest"]:checked');
+    var minst = form.querySelector('input[name="q' + qnum + '_minst"]:checked');
+    return {
+      meest: meest ? meest.value : null,
+      minst: minst ? minst.value : null,
+    };
+  }
+
+  function isQuestionComplete(qnum) {
+    var a = getAnswer(qnum);
+    return a.meest !== null && a.minst !== null && a.meest !== a.minst;
+  }
+
+  function updateProgress() {
+    var completed = 0;
+    QUESTIONS.forEach(function (q) {
+      if (isQuestionComplete(q.number)) completed += 1;
+    });
+    var pct = Math.round((completed / QUESTIONS.length) * 100);
+    progressFill.style.width = pct + '%';
+    progressLabel.textContent = completed + ' van ' + QUESTIONS.length + ' ingevuld';
+    return completed;
+  }
+
+  function clearQuestionState(qnum) {
+    var fieldset = document.getElementById('question-' + qnum);
+    fieldset.classList.remove('incomplete');
+    fieldset.querySelector('.question-error').textContent = '';
+  }
+
+  function markQuestionIncomplete(qnum, message) {
+    var fieldset = document.getElementById('question-' + qnum);
+    fieldset.classList.add('incomplete');
+    fieldset.querySelector('.question-error').textContent = message;
+  }
+
+  form.addEventListener('change', function (evt) {
+    var target = evt.target;
+    if (target && target.matches('input[type="radio"]')) {
+      var fieldset = target.closest('fieldset.question');
+      var qnum = fieldset.getAttribute('data-qnum');
+      var a = getAnswer(qnum);
+      if (a.meest !== null && a.minst !== null && a.meest === a.minst) {
+        markQuestionIncomplete(qnum, '"Meest" en "Minst" mogen niet dezelfde optie zijn.');
+      } else {
+        clearQuestionState(qnum);
+      }
+      updateProgress();
+    }
+  });
+
+  updateProgress();
+
+  function csvEscape(value) {
+    var str = String(value);
+    if (/[",\n]/.test(str)) {
+      return '"' + str.replace(/"/g, '""') + '"';
+    }
+    return str;
+  }
+
+  function sanitizeForFilename(str) {
+    return String(str)
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-zA-Z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '') || 'onbekend';
+  }
+
+  form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    globalError.classList.remove('visible');
+    saveSuccess.classList.remove('visible');
+
+    var naam = document.getElementById('input-naam').value.trim();
+    var datum = document.getElementById('input-datum').value;
+    var incompleteNums = [];
+
+    QUESTIONS.forEach(function (q) {
+      var a = getAnswer(q.number);
+      if (a.meest === null || a.minst === null) {
+        incompleteNums.push(q.number);
+        markQuestionIncomplete(q.number, 'Kies zowel "Meest" als "Minst" van toepassing.');
+      } else if (a.meest === a.minst) {
+        incompleteNums.push(q.number);
+        markQuestionIncomplete(q.number, '"Meest" en "Minst" mogen niet dezelfde optie zijn.');
+      } else {
+        clearQuestionState(q.number);
+      }
+    });
+
+    if (!naam) {
+      var naamField = document.getElementById('input-naam');
+      naamField.focus();
+    }
+
+    if (!naam || incompleteNums.length > 0) {
+      var messages = [];
+      if (!naam) messages.push('Vul je naam in.');
+      if (incompleteNums.length > 0) {
+        messages.push('Vraag ' + incompleteNums.join(', ') + ' is niet (correct) ingevuld.');
+      }
+      globalErrorDetail.textContent = ' ' + messages.join(' ');
+      globalError.classList.add('visible');
+      globalError.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (incompleteNums.length > 0) {
+        var firstFieldset = document.getElementById('question-' + incompleteNums[0]);
+        window.setTimeout(function () {
+          firstFieldset.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      }
+      return;
+    }
+
+    var discNetto = { D: 0, I: 0, S: 0, C: 0 };
+    var row = {};
+    QUESTIONS.forEach(function (q) {
+      var a = getAnswer(q.number);
+      row['Q' + q.number + '_meest'] = a.meest;
+      row['Q' + q.number + '_minst'] = a.minst;
+      var meestOpt = q.options.filter(function (o) { return o.letter === a.meest; })[0];
+      var minstOpt = q.options.filter(function (o) { return o.letter === a.minst; })[0];
+      discNetto[meestOpt.disc] += 1;
+      discNetto[minstOpt.disc] -= 1;
+    });
+
+    var headers = ['Naam', 'Functie', 'Datum'];
+    QUESTIONS.forEach(function (q) {
+      headers.push('Q' + q.number + '_meest');
+      headers.push('Q' + q.number + '_minst');
+    });
+    headers.push('D_netto', 'I_netto', 'S_netto', 'C_netto');
+
+    var values = [naam, FUNCTION_TITLE, datum];
+    QUESTIONS.forEach(function (q) {
+      values.push(row['Q' + q.number + '_meest']);
+      values.push(row['Q' + q.number + '_minst']);
+    });
+    values.push(discNetto.D, discNetto.I, discNetto.S, discNetto.C);
+
+    var csvContent = headers.map(csvEscape).join(',') + '\r\n' + values.map(csvEscape).join(',') + '\r\n';
+    var blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var filename = 'disc_' + FUNCTION_KEY + '_' + sanitizeForFilename(naam) + '_' + datum + '.csv';
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    saveSuccess.classList.add('visible');
+    saveSuccess.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+</body>
+</html>
