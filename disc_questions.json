@@ -10,22 +10,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct beginnen met tekenen/rekenen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast het team meekrijgen in de aanpak",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat iedereen zich comfortabel voelt met de opdracht",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de specificaties en kaders goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -36,22 +36,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik zet door met mijn eigen aanpak, ook als niet iedereen het daar meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -62,22 +62,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of aannames kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -88,22 +88,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om dingen te verbeteren",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met collega's",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -114,22 +114,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel collega's voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -140,22 +140,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met berekeningen/feiten",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -166,22 +166,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Als het aan mij ligt, bepaal ik liever zelf wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd stappenplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -192,22 +192,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke/technische onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -218,22 +218,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik ga er zelf meteen mee aan de slag.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -244,22 +244,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik zeg meteen als ik denk dat we iets anders moeten aanpakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en input kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -270,22 +270,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -296,22 +296,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -322,22 +322,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -348,22 +348,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -374,22 +374,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met anderen",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -400,22 +400,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -426,22 +426,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -452,22 +452,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, resultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Technische details of nieuwtjes",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -478,22 +478,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -504,22 +504,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -537,22 +537,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct de kaders en planning neerzetten, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast het team en de klant meekrijgen",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat iedereen zich comfortabel voelt bij de opdracht",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de opdracht en scope goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -563,22 +563,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik hak knopen door, ook als niet iedereen het er meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -589,22 +589,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of besluiten kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -615,22 +615,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om het beter te maken",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met team en klant",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -641,22 +641,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel het team voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -667,22 +667,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met feiten",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -693,22 +693,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Ik bepaal zelf wel wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd stappenplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -719,22 +719,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -745,22 +745,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik grijp meteen in.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -771,22 +771,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik neem al snel de touwtjes in handen.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en input kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -797,22 +797,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid van de klant",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -823,22 +823,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -849,22 +849,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -875,22 +875,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -901,22 +901,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met het team",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -927,22 +927,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -953,22 +953,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -979,22 +979,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, projectresultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Feiten, planning of details",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -1005,22 +1005,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -1031,22 +1031,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -1064,22 +1064,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct beginnen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast de collega's op de werkvloer meekrijgen",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat iedereen zich comfortabel voelt met de klus",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de tekening en instructies goed doornemen",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -1090,22 +1090,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik zet door met mijn eigen aanpak, ook als niet iedereen het daar meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -1116,22 +1116,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of afspraken kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -1142,22 +1142,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om het efficiënter te maken",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met collega's",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -1168,22 +1168,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel collega's voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -1194,22 +1194,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met de tekening/instructie",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -1220,22 +1220,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Als het aan mij ligt, bepaal ik liever zelf wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare werkvolgorde",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd stappenplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -1246,22 +1246,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke/technische onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -1272,22 +1272,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik ga er zelf meteen mee aan de slag.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -1298,22 +1298,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie op de werkvloer",
+            "text": "Ik zeg meteen als ik denk dat we iets anders moeten aanpakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en tekeningen kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -1324,22 +1324,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -1350,22 +1350,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -1376,22 +1376,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -1402,22 +1402,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -1428,22 +1428,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met anderen",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -1454,22 +1454,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -1480,22 +1480,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -1506,22 +1506,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, de klus zelf",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Technische details of nieuwtjes",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -1532,22 +1532,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -1558,22 +1558,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -1591,22 +1591,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct de klant benaderen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast het netwerk inzetten",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat het contact op zijn gemak is",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de markt en klantbehoefte goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -1617,22 +1617,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik hak knopen door, ook als niet iedereen het er meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -1643,22 +1643,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of cijfers kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -1669,22 +1669,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om meer te scoren",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met collega's",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -1695,22 +1695,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel collega's voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -1721,22 +1721,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met feiten en cijfers",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -1747,22 +1747,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Ik bepaal zelf wel wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane kansen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare aanpak",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd salesplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -1773,22 +1773,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -1799,22 +1799,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik grijp meteen in.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -1825,22 +1825,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik neem al snel de touwtjes in handen.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en input kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -1851,22 +1851,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -1877,22 +1877,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -1903,22 +1903,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -1929,22 +1929,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -1955,22 +1955,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met anderen",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -1981,22 +1981,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -2007,22 +2007,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -2033,22 +2033,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, deals en resultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Feiten, marktnieuws of details",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -2059,22 +2059,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -2085,22 +2085,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -2118,22 +2118,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct beginnen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast collega's meekrijgen in de aanpak",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat iedereen zich comfortabel voelt",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de taak en gewenste uitkomst goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -2144,22 +2144,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik zet door met mijn eigen aanpak, ook als niet iedereen het daar meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -2170,22 +2170,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of afspraken kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -2196,22 +2196,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om dingen te verbeteren",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met collega's",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -2222,22 +2222,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel collega's voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -2248,22 +2248,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met feiten",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -2274,22 +2274,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Als het aan mij ligt, bepaal ik liever zelf wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd stappenplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -2300,22 +2300,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -2326,22 +2326,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik ga er zelf meteen mee aan de slag.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -2352,22 +2352,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik zeg meteen als ik denk dat we iets anders moeten aanpakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en input kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -2378,22 +2378,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -2404,22 +2404,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -2430,22 +2430,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -2456,22 +2456,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -2482,22 +2482,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met anderen",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -2508,22 +2508,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -2534,22 +2534,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -2560,22 +2560,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, resultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Feiten, nieuws of details",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -2586,22 +2586,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -2612,22 +2612,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -2645,22 +2645,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct actie ondernemen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast collega's meekrijgen in de aanpak",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat betrokkenen zich comfortabel voelen",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst het vraagstuk en de kaders goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -2671,22 +2671,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik zet door met mijn eigen aanpak, ook als niet iedereen het daar meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -2697,22 +2697,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of besluiten kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -2723,22 +2723,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om dingen te verbeteren",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met collega's",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -2749,22 +2749,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel collega's voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -2775,22 +2775,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met feiten en beleid",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -2801,22 +2801,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Als het aan mij ligt, bepaal ik liever zelf wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane aanpassingen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare planning",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd stappenplan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -2827,22 +2827,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -2853,22 +2853,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik ga er zelf meteen mee aan de slag.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -2879,22 +2879,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik zeg meteen als ik denk dat we iets anders moeten aanpakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en dossiers kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -2905,22 +2905,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -2931,22 +2931,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -2957,22 +2957,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -2983,22 +2983,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -3009,22 +3009,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met anderen",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -3035,22 +3035,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -3061,22 +3061,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -3087,22 +3087,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, resultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Feiten, nieuws of details",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -3113,22 +3113,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -3139,22 +3139,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -3172,22 +3172,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Direct de richting bepalen, tempo maken",
+            "text": "Ik begin liever meteen, dan zie ik vanzelf wat er nog moet gebeuren.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Enthousiast het bedrijf meekrijgen in het verhaal",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Eerst zorgen dat iedereen zich comfortabel voelt bij de verandering",
+            "text": "Ik check eerst of iedereen zich prettig voelt bij de aanpak.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Eerst de markt en cijfers goed uitzoeken",
+            "text": "Ik lees me eerst goed in voordat ik verder ga.",
             "disc": "C"
           }
         ]
@@ -3198,22 +3198,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik knopen door, ook als dat schuurt",
+            "text": "Ik hak knopen door, ook als niet iedereen het er meteen mee eens is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik improviserend naar een oplossing",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik kalm en werk ik het rustig af",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst wat er precies misging",
+            "text": "Ik ga eerst na waar het precies misging.",
             "disc": "C"
           }
         ]
@@ -3224,22 +3224,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik direct wat ik ergens van vind",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Breng ik energie en luchtigheid in het gesprek",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Luister ik vooral en sluit ik me aan bij de groep",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op feiten en of besluiten kloppen",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
             "disc": "C"
           }
         ]
@@ -3250,22 +3250,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zie ik als kans om dingen te verbeteren",
+            "text": "Ik zie het vooral als een kans om dingen anders aan te pakken.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Bespreek ik enthousiast met het managementteam",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik lastig als het te snel gaat",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst goed doorgronden voor ik meega",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
             "disc": "C"
           }
         ]
@@ -3276,22 +3276,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Pak ik het zelf voortvarend op",
+            "text": "Ik pak het gewoon zelf op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Betrek ik snel het managementteam voor input",
+            "text": "Ik loop enthousiast bij een collega langs om er samen over te sparren.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Werk ik het rustig en gestructureerd af",
+            "text": "Ik werk het stap voor stap uit.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Ga ik grondig en methodisch te werk",
+            "text": "Ik ga het eerst helemaal uitpluizen.",
             "disc": "C"
           }
         ]
@@ -3302,22 +3302,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik meteen waar ik sta",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Probeer ik het gesprek luchtig te houden",
+            "text": "Ik houd het gesprek liever luchtig.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Zoek ik naar een compromis",
+            "text": "Ik zoek naar een tussenweg waar iedereen mee kan leven.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Onderbouw ik mijn standpunt met feiten en cijfers",
+            "text": "Ik onderbouw mijn kant van het verhaal.",
             "disc": "C"
           }
         ]
@@ -3328,22 +3328,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stel ik zelf prioriteiten, zonder veel overleg",
+            "text": "Ik bepaal zelf wel wat voorrang krijgt.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Laat ik ruimte voor spontane kansen",
+            "text": "Ik hou het liever flexibel, dan kan er nog wat tussendoor.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Houd ik vast aan een vaste, voorspelbare koers",
+            "text": "Ik hou vast aan een volgorde die ik gewend ben.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Maak ik een gedetailleerd strategisch plan",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
             "disc": "C"
           }
         ]
@@ -3354,22 +3354,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Zeg ik zonder omwegen wat beter kan",
+            "text": "Ik zeg gewoon waar het op staat.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Benoem ik vooral wat goed gaat",
+            "text": "Ik benoem vooral wat er goed aan is.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik voorzichtig om de relatie niet te schaden",
+            "text": "Ik kies mijn woorden voorzichtig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Focus ik op feitelijke onjuistheden",
+            "text": "Ik wijs vooral op wat feitelijk niet klopt.",
             "disc": "C"
           }
         ]
@@ -3380,22 +3380,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Grijp ik meteen in",
+            "text": "Ik grijp meteen in.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik naar een creatieve oplossing",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Blijf ik rustig en werk ik het stap voor stap op",
+            "text": "Ik blijf rustig en werk het netjes op.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Analyseer ik eerst de oorzaak",
+            "text": "Ik zoek eerst uit hoe dit heeft kunnen gebeuren.",
             "disc": "C"
           }
         ]
@@ -3406,22 +3406,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Neem ik snel de regie",
+            "text": "Ik neem al snel de touwtjes in handen.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zoek ik verbinding en gezamenlijke energie",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Pas ik me makkelijk aan anderen aan",
+            "text": "Ik schik me makkelijk naar wat de ander gewend is.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Let ik op dat afspraken en cijfers kloppen",
+            "text": "Ik let erop dat de afspraken en de input kloppen.",
             "disc": "C"
           }
         ]
@@ -3432,22 +3432,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ga ik gewoon aan de slag",
+            "text": "Ik begin gewoon, dan kom ik er vanzelf achter.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Vraag ik enthousiast rond wat de bedoeling is",
+            "text": "Ik vraag het vrolijk in het rond.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Wacht ik liever op duidelijkheid",
+            "text": "Ik wacht liever tot iemand het me uitlegt.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zoek ik eerst uit hoe het hoort",
+            "text": "Ik zoek eerst zelf uit hoe het hoort.",
             "disc": "C"
           }
         ]
@@ -3458,22 +3458,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Sneller ongeduldig wordt",
+            "text": "Merk ik dat mijn geduld sneller op is.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Toch positief probeert te blijven",
+            "text": "Blijf ik proberen er het beste van te maken.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Behoefte hebt aan rust en overzicht",
+            "text": "Heb ik vooral behoefte aan rust en overzicht.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Extra secuur wordt om fouten te voorkomen",
+            "text": "Word ik nog wat secuurder om niets over het hoofd te zien.",
             "disc": "C"
           }
         ]
@@ -3484,22 +3484,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik kort en krachtig",
+            "text": "Hou ik het kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik het levendig en enthousiasmerend",
+            "text": "Maak ik er een verhaal van waar mensen enthousiast van worden.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Ben ik rustig en to-the-point",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Zorg ik dat alles feitelijk klopt en compleet is",
+            "text": "Zorg ik dat alles klopt en compleet is.",
             "disc": "C"
           }
         ]
@@ -3510,22 +3510,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Wil ik vooral weten wat beter kan, snel door",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Waardeer ik het als het positief gebracht wordt",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Vind ik een persoonlijke, rustige toon prettig",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het onderbouwd en concreet",
+            "text": "Wil ik het onderbouwd en concreet horen.",
             "disc": "C"
           }
         ]
@@ -3536,22 +3536,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Beslis ik snel, op eigen inzicht",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Overleg ik graag eerst met het managementteam",
+            "text": "Overleg ik het liever eerst met anderen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik de tijd, stap voor stap",
+            "text": "Neem ik er de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik eerst alle informatie op een rij hebben",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
             "disc": "C"
           }
         ]
@@ -3562,22 +3562,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Geef ik er direct een korte, duidelijke terugkoppeling op",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Blijf ik luchtig en zoek ik samen een oplossing",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Laat ik het meestal rusten om de sfeer goed te houden",
+            "text": "Laat ik het meestal maar zo, voor de sfeer.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wijs ik precies aan wat er fout ging",
+            "text": "Wijs ik precies aan wat er niet klopte.",
             "disc": "C"
           }
         ]
@@ -3588,22 +3588,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Ben ik al snel het middelpunt qua initiatief",
+            "text": "Neem ik al snel zelf het initiatief.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Zorg ik voor gezelligheid en energie",
+            "text": "Zorg ik voor een goede sfeer.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Heb ik het liefst rustige gesprekken met een paar mensen",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Sta ik er wat afwachtend/observerend bij",
+            "text": "Kijk ik het liever eerst even aan.",
             "disc": "C"
           }
         ]
@@ -3614,22 +3614,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Concrete zaken, resultaten",
+            "text": "Gaat het al snel over waar we mee bezig zijn.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Ervaringen en anekdotes",
+            "text": "Wissel ik ervaringen en verhalen uit.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Hoe het met mensen persoonlijk gaat",
+            "text": "Vraag ik hoe het met de ander gaat.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Feiten, nieuws of details",
+            "text": "Hoor ik graag het laatste nieuws of de details.",
             "disc": "C"
           }
         ]
@@ -3640,22 +3640,22 @@
         "options": [
           {
             "letter": "A",
-            "text": "Help ik kort en doelgericht",
+            "text": "Help ik kort en to the point.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Maak ik er ook een gezellig moment van",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Neem ik er rustig de tijd voor",
+            "text": "Neem ik er rustig de tijd voor.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Wil ik het probleem eerst goed begrijpen",
+            "text": "Wil ik het probleem eerst goed snappen.",
             "disc": "C"
           }
         ]
@@ -3666,22 +3666,549 @@
         "options": [
           {
             "letter": "A",
-            "text": "Stuur ik vooral korte, duidelijke berichten",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
             "disc": "D"
           },
           {
             "letter": "B",
-            "text": "Gebruik ik humor en emoji's",
+            "text": "Gebruik ik weleens een grapje of emoji.",
             "disc": "I"
           },
           {
             "letter": "C",
-            "text": "Reageer ik weinig, maar lees ik alles rustig mee",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
             "disc": "S"
           },
           {
             "letter": "D",
-            "text": "Stuur ik vooral als er iets feitelijk te corrigeren is",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
+            "disc": "C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "accountmanager",
+    "title": "Business Developer / Accountmanager",
+    "intro": "Deze vragenlijst geeft inzicht in je natuurlijke stijl in klantgesprekken, onderhandeling en het begeleiden van projecten van eerste contact tot en met de uitvoering.",
+    "questions": [
+      {
+        "number": 1,
+        "stem": "Bij een eerste gesprek met een potentiële klant over een nieuw project reageer je het liefst:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik ga er gewoon induiken en stel voor om snel een vervolgstap te plannen.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik spreek er enthousiast met een paar collega's over door.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik check eerst of de klant zich op zijn gemak voelt bij het gesprek.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik lees me eerst goed in op de klant en de markt voordat ik verder ga.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "stem": "Als een offertedeadline onder druk komt te staan:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik hak knopen door, ook als niet iedereen het er meteen mee eens is.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik bedenk al sparrend met anderen ter plekke een nieuwe aanpak.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik werk het gewoon verder af, stap voor stap.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik ga eerst na waar het precies misging.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "stem": "In een vergadering met het hele bedrijf:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik zeg gewoon wat ik ervan vind.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik zorg dat de sfeer luchtig blijft.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik luister vooral en sluit me aan bij wat de groep vindt.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik let erop of de genoemde cijfers en afspraken kloppen.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "stem": "Verandering in de marktbenadering of dienstverlening:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik zie het vooral als een kans om meer voor elkaar te krijgen.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik bespreek het meteen met iedereen die het wil horen.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik vind het lastig als het allemaal erg snel gaat.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik wil eerst precies snappen waarom, voor ik meega.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "stem": "Bij een lastige onderhandeling over de offerte:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik ga er zelf stevig voor zitten.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik werk het rustig en stap voor stap uit.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik ga het eerst helemaal uitpluizen voor ik terugkom op tafel.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "stem": "Als een klant het ergens niet mee eens is tijdens de onderhandeling:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik maak meteen duidelijk hoe ik erin sta.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik houd het gesprek liever luchtig.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik zoek naar een tussenweg waar beide partijen mee kunnen leven.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik onderbouw mijn kant van het verhaal met cijfers en argumenten.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "stem": "Bij het plannen van je klantgesprekken en opvolging:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik bepaal zelf wel welke klant voorrang krijgt.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik hou het liever flexibel, dan kan er nog een kans tussendoor.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik hou vast aan een vaste, voorspelbare opvolgroutine.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik zet vooraf de stappen voor mezelf op een rij.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "stem": "Bij het geven van je mening over de projectaanpak die een project owner heeft geformuleerd:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik zeg gewoon waar het op staat.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik benoem vooral wat er goed aan is.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik kies mijn woorden voorzichtig, het is niet mijn vakgebied.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik wijs vooral op wat richting de klant nog niet klopt of ontbreekt.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "stem": "Als een onderhandeling dreigt vast te lopen:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik grijp meteen in.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik bedenk samen met anderen al brainstormend een originele uitweg.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik blijf rustig en werk het geduldig verder op.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik zoek eerst uit waar het precies misging.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "stem": "In samenwerking met de project owner bij het opstellen van de aanpak:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik neem al snel de touwtjes in handen richting de klant.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik zorg dat de neuzen dezelfde kant op komen te staan.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik schik me makkelijk naar wat de project owner voorstelt.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik let erop dat de afspraken en toezeggingen richting de klant kloppen.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "stem": "Bij een nieuwe leadopdracht zonder volledig duidelijke informatie:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ik ga gewoon aan de slag en pak de klant meteen op.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Ik vraag het vrolijk in het rond.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Ik wacht liever op duidelijkheid voordat ik contact zoek.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Ik zoek eerst zelf uit hoe het zit.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "stem": "Onder druk van meerdere lopende onderhandelingen merk je dat je:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sneller ongeduldig wordt.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Toch positief probeert te blijven richting de klant.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Behoefte hebt aan rust en overzicht.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Extra secuur wordt om niets over het hoofd te zien.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "stem": "Bij het presenteren van de offerte of aanpak aan de klant:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ben ik kort en krachtig.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik het levendig en enthousiasmerend.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Blijf ik rustig en persoonlijk in de toon.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Zorg ik dat alles feitelijk klopt en compleet is.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "stem": "Als je feedback krijgt op een onderhandeling of klantgesprek:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Wil ik vooral snel weten wat er beter kan.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Vind ik het fijn als het positief gebracht wordt.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vind ik een persoonlijke, rustige toon prettig.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het onderbouwd en concreet horen.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "stem": "Bij het maken van keuzes over de aanpak richting een klant:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Beslis ik snel, op mijn eigen inzicht.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Overleg ik het liever eerst met collega's.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er de tijd voor.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik eerst alle informatie compleet hebben.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "stem": "Als een project owner een fout maakt die de klantrelatie raakt:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Geef ik er meteen kort en duidelijk een reactie op.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Blijf ik luchtig en zoeken we er samen een mouw aan te passen.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Laat ik het meestal maar zo, voor de relatie.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wijs ik precies aan wat er niet klopte.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "stem": "Tijdens een borrel of netwerkevent:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Neem ik al snel zelf het initiatief.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Zorg ik voor een goede sfeer.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Heb ik het liefst een rustig gesprek met een paar mensen.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Kijk ik het liever eerst even aan.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "stem": "Bij de koffieautomaat gaat een gesprek al snel over:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Concrete zaken, deals en resultaten.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Wissel ik ervaringen en verhalen uit.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Vraag ik hoe het met de ander gaat.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Hoor ik graag het laatste marktnieuws of de details.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "stem": "Als een collega je spontaan om hulp vraagt bij een klantvraag:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Help ik kort en doelgericht.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Maak ik er ook meteen een gezellig moment van.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Neem ik er rustig de tijd voor.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Wil ik het probleem eerst goed snappen.",
+            "disc": "C"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "stem": "In een informele groepsapp of overleg:",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stuur ik vooral korte, duidelijke berichtjes.",
+            "disc": "D"
+          },
+          {
+            "letter": "B",
+            "text": "Gebruik ik weleens een grapje of emoji.",
+            "disc": "I"
+          },
+          {
+            "letter": "C",
+            "text": "Lees ik vooral mee, zonder er veel op te reageren.",
+            "disc": "S"
+          },
+          {
+            "letter": "D",
+            "text": "Reageer ik als er iets feitelijk niet klopt.",
             "disc": "C"
           }
         ]

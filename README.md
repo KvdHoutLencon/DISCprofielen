@@ -4,20 +4,20 @@ Zelfstandige HTML-vragenlijsten voor het afnemen van DISC-assessments per functi
 
 ## Bestanden
 
-- `disc_questions.json` — brondata: 7 functies x 20 vragen x 4 forced-choice opties.
-- `generate.js` — Node-script dat uit `disc_questions.json` de 7 HTML-bestanden genereert.
-- `disc_engineer.html`, `disc_projectleider.html`, `disc_assembly.html`, `disc_sales.html`, `disc_office.html`, `disc_hr.html`, `disc_directeur.html` — de gegenereerde, volledig zelfstandige vragenlijsten (geen build-stap, geen externe dependencies, werken door het bestand direct in een browser te openen).
+- `disc_questions.json` — brondata: 8 functies x 20 vragen x 4 forced-choice opties.
+- `generate.js` — Node-script dat uit `disc_questions.json` de HTML-bestanden genereert (één per functie in het JSON-bestand) en daarbij de antwoordopties per vraag shuffelt.
+- `disc_engineer.html`, `disc_projectleider.html`, `disc_assembly.html`, `disc_sales.html`, `disc_office.html`, `disc_hr.html`, `disc_directeur.html`, `disc_accountmanager.html` — de gegenereerde, volledig zelfstandige vragenlijsten (geen build-stap, geen externe dependencies, werken door het bestand direct in een browser te openen).
 
 ## Vragenlijst aanpassen / opnieuw genereren
 
-1. Pas `disc_questions.json` aan (vragen, opties, DISC-codering).
+1. Pas `disc_questions.json` aan (vragen, opties, DISC-codering, of voeg een nieuwe functie toe).
 2. Genereer de HTML-bestanden opnieuw:
 
    ```
    node generate.js
    ```
 
-   Dit overschrijft alle 7 `disc_<key>.html`-bestanden met de actuele inhoud van `disc_questions.json`.
+   Dit overschrijft (of genereert nieuw) de `disc_<key>.html`-bestanden voor elke functie in `disc_questions.json`. De antwoordopties worden per vraag geshuffeld met een vaste, van de vraaginhoud afgeleide volgorde, zodat regenereren stabiel blijft zolang de brondata niet wijzigt, maar de DISC-lading niet meer overal in dezelfde A/B/C/D-volgorde staat.
 
 ## Gebruik door een medewerker
 
