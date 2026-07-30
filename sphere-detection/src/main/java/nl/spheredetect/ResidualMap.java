@@ -154,6 +154,90 @@ public final class ResidualMap {
     }
 
     /**
+     * Residual for a small window of the sampling image only.
+     *
+     * Once the ball has been located and the camera is standing still, the question per
+     * frame is no longer "where is a ball" but "is the ball still where it was". That only
+     * needs the neighbourhood of the known position, which is roughly an order of
+     * magnitude less work than the whole frame - and it is also the reason a golf club
+     * entering the picture elsewhere cannot disturb anything: it is simply not looked at.
+     *
+     * The window is small enough that illumination is uniform across it, so a single
+     * robust gain/offset replaces the tile grid. The previous frame's values are passed in
+     * as a prior, which keeps the estimate steady when something large (a club, a shoe)
+     * temporarily covers part of the window.
+     *
+     * The returned map has the size of the WINDOW; its pixel (x,y) is sample pixel
+     * (ox+x, oy+y). Convert coordinates before and after calling.
+     */
+    public static ResidualMap computeWindow(GrayImage sample, GrayImage reference,
+                                            SimilarityTransform t, DetectorConfig cfg,
+                                            Calibration cal, int ox, int oy, int w, int h,
+                                            double priorGain, double priorOffset,
+                                            double maxGainStep, double maxOffsetStep) {
+        float[] warped = new float[w * h];
+        boolean[] valid = new boolean[w * h];
+        float[] cropped = new float[w * h];
+
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                int sx = ox + x, sy = oy + y;
+                int i = y * w + x;
+                if (sx < 0 || sy < 0 || sx >= sample.width || sy >= sample.height) continue;
+                cropped[i] = sample.data[sy * sample.width + sx];
+                double rx = t.mapX(sx, sy);
+                double ry = t.mapY(sx, sy);
+                if (rx >= 0.5 && ry >= 0.5 && rx <= reference.width - 1.5 && ry <= reference.height - 1.5) {
+                    warped[i] = reference.bilinear(rx, ry);
+                    valid[i] = true;
+                }
+            }
+        }
+
+        double[] fit = robustAffineFit(cropped, warped, valid, 0, 0, w, h, w, 1,
+                priorGain, priorOffset);
+        double g = fit[0], o = fit[1];
+
+        // Illumination is allowed to drift only slowly. Real light changes - a cloud, the
+        // sun moving - take seconds; a shadow edge sweeping through this small window
+        // takes a few frames. Without a rate limit the fit would simply absorb that
+        // shadow, the spot would look "explained", and a ball passing under a shadow
+        // would be indistinguishable from a ball that had left. Capping the step per
+        // frame means a fast local change stays in the residual, where it belongs.
+        if (maxGainStep > 0) {
+            g = Stats.clamp(g, priorGain - maxGainStep, priorGain + maxGainStep);
+            o = Stats.clamp(o, priorOffset - maxOffsetStep, priorOffset + maxOffsetStep);
+        }
+
+        float[] residual = new float[w * h];
+        for (int i = 0; i < w * h; i++) {
+            if (valid[i]) residual[i] = (float) (cropped[i] - (g * warped[i] + o));
+        }
+
+        GrayImage smooth = ImageOps.blur121(new GrayImage(w, h, residual));
+        for (int i = 0; i < w * h; i++) if (!valid[i]) smooth.data[i] = 0;
+
+        double[] samp = new double[w * h];
+        int nSamp = 0;
+        for (int i = 0; i < w * h; i++) if (valid[i]) samp[nSamp++] = smooth.data[i];
+        double sigma = Math.max(0.35, Stats.sigmaFromMad(samp, nSamp));
+        double threshold = Math.max(cal.residualFloor, cfg.kSigma * sigma);
+
+        boolean[] mask = new boolean[w * h];
+        int count = 0;
+        for (int y = 1; y < h - 1; y++) {
+            for (int x = 1; x < w - 1; x++) {
+                int i = y * w + x;
+                if (valid[i] && Math.abs(smooth.data[i]) > threshold) { mask[i] = true; count++; }
+            }
+        }
+
+        GradField grad = ImageOps.sobel(smooth);
+        return new ResidualMap(w, h, warped, valid, residual, smooth, grad, sigma, threshold,
+                mask, count, g, o);
+    }
+
+    /**
      * Builds a residual map for the reference-free fallback: the "residual" is simply
      * the locally high-pass filtered sample, so the shape machinery still works when
      * there is no usable reference alignment.

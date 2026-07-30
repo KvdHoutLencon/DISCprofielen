@@ -56,6 +56,17 @@ public final class SphereDetector {
         lastTransform = null;
     }
 
+    /**
+     * Aligns a frame without running the rest of the pipeline. The tracker uses this to
+     * refresh the alignment now and then while it is only verifying a locked position.
+     */
+    public Registrar.Result register(GrayImage sample) {
+        Registrar.Result reg = registrar.register(sample,
+                cfg.reuseLastTransform ? lastTransform : null);
+        lastTransform = reg.ok ? reg.transform : null;
+        return reg;
+    }
+
     public DetectionResult detect(GrayImage sample) {
         long t0 = System.nanoTime();
         DetectionResult res = new DetectionResult();

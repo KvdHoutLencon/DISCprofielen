@@ -78,6 +78,31 @@ public final class Blobs {
         return out;
     }
 
+    /** A filled disc as a Group, for when nothing was flagged but a region must be scored. */
+    public static Group disc(double cx, double cy, double r, int w, int h) {
+        Group g = new Group();
+        g.minX = Integer.MAX_VALUE; g.minY = Integer.MAX_VALUE; g.maxX = -1; g.maxY = -1;
+        int cap = (int) (Math.PI * (r + 2) * (r + 2)) + 16;
+        int[] tmp = new int[cap];
+        int n = 0;
+        for (int y = (int) Math.max(0, cy - r); y <= Math.min(h - 1, cy + r); y++) {
+            for (int x = (int) Math.max(0, cx - r); x <= Math.min(w - 1, cx + r); x++) {
+                double dx = x - cx, dy = y - cy;
+                if (dx * dx + dy * dy > r * r) continue;
+                if (n < cap) tmp[n++] = y * w + x;
+                g.minX = Math.min(g.minX, x); g.maxX = Math.max(g.maxX, x);
+                g.minY = Math.min(g.minY, y); g.maxY = Math.max(g.maxY, y);
+            }
+        }
+        g.area = n;
+        g.pixels = new int[n];
+        System.arraycopy(tmp, 0, g.pixels, 0, n);
+        g.centroidX = cx;
+        g.centroidY = cy;
+        if (g.maxX < 0) { g.minX = 0; g.minY = 0; g.maxX = 0; g.maxY = 0; }
+        return g;
+    }
+
     /** Merges components whose bounding boxes come within 'gap' pixels of each other. */
     public static List<Group> merge(List<Group> in, double gap) {
         int n = in.size();

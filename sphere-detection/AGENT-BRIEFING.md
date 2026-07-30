@@ -190,3 +190,191 @@ Alles zit in `DetectorConfig`, elk veld met uitleg erboven.
 
 `DetectionResult.message` en `CircleScore.rejectReason` zeggen in het Nederlands wélke
 toets een kandidaat velde. Gebruik dat bij het afregelen in plaats van gokken.
+
+---
+
+# Toevoeging: camerastream, launch-trigger en de kleurvraag
+
+## Wat er bij is gekomen
+
+Drie klassen bovenop de frame-detector. De frame-detector zelf is ongewijzigd.
+
+| Klasse | Rol |
+|---|---|
+| `BallTracker` | **de nieuwe hoofdingang voor een stream.** Toestandsmachine met de "gelanceerd"-trigger |
+| `LockedBallVerifier` | goedkope controle per frame op de vastgelegde balpositie |
+| `ChromaPlanes` + `ColorModel` | optionele kleurbevestiging uit de U/V-vlakken |
+
+Gebruik per frame:
+
+```java
+BallTracker tracker = new BallTracker(reference, calibration, cfg, new BallTracker.Config()); // eenmalig
+
+BallTracker.Update u = tracker.update(sample, chroma, System.currentTimeMillis());
+label.setText(u.label);          // "geen bal gedetecteerd" / "bal gedetecteerd" / "gelanceerd"
+if (u.launched) onLaunch();      // exact één frame: gebruik deze flank, niet de toestand
+```
+
+`chroma` mag `null` zijn; dan draait alles op helderheid.
+
+## De toestandsmachine
+
+```
+SEARCHING ──bal gevonden──► CONFIRMING ──3 s stabiel──► ARMED
+    ▲                            │                        │
+    │                       bal weg                  bal niet meer zichtbaar
+    │                            ▼                        ▼
+    └────────────────────────────┴──────────────── INTERRUPTED
+    ▲                                               │           │
+    │                                     bal terug │           │ achtergrond terug
+    │                                               ▼           ▼
+    └────────── na launchHoldMs ──────────────── ARMED      LAUNCHED
+```
+
+`CONFIRMING`, `ARMED` én `INTERRUPTED` melden allemaal **"bal gedetecteerd"**. Dat is de
+kern van wat gevraagd werd: een korte onderbreking mag het label niet laten flikkeren.
+
+## Waarom een korte onderbreking geen launch is
+
+Dit is het lastigste punt en waar de meeste logica in zit. Een club die over de bal gaat
+verbergt hem **net zo volledig** als een slag, en een oefenswing is niet langzamer dan een
+echte. Wachten en kijken of de bal terugkomt is onvermijdelijk, maar tijd alleen is een
+slechte test.
+
+Wat het wél beslist is **wat er achterblijft** op de plek:
+
+- **afgedekt door een club** → bal weg *en* er zit iets vreemds;
+- **echt gelanceerd** → bal weg *en* het gras dat de referentie al kent is terug.
+
+Een launch is dus niet "de bal wordt niet meer gedetecteerd", maar "de bal wordt niet meer
+gedetecteerd **en** de achtergrond is terug". Daarnaast moet het licht rustig zijn: zolang
+de belichtingscorrectie een schaduwrand aan het najagen is, verklaart hij de plek deels weg
+en is "achtergrond terug" niet te vertrouwen.
+
+Blijft er iets liggen (een schoen, een bag), dan geeft de tracker het na
+`maxInterruptionMs` op en gaat terug naar zoeken — **zonder** trigger.
+
+## Waarom de club verder niet stoort
+
+Zodra de bal vastligt is de vraag niet meer "waar is een bal?" maar "ligt hij er nog?".
+Alleen een klein venster rond de bekende positie wordt bekeken (~2,6 × radius). Een club
+die ter addressering wordt neergezet, een schaduw die over de mat trekt, de voeten van de
+speler — die vallen buiten wat er gemeten wordt. Dat is geen filter dat je kunt overtuigen,
+het wordt simpelweg niet bekeken.
+
+Dat maakt het ook goedkoop: **6,6 ms per frame** in ARMED tegen 44 ms voor een volledige
+zoektocht (ontwikkelmachine; op een Pixel 6a/7a ruwweg 2–3×, dus reken op 15–20 ms). De
+uitlijning wordt niet elk frame opnieuw gedaan maar elke 8 frames — een statief drift
+langzaam.
+
+## Timing
+
+De trigger komt `launchConfirmFrames` (3) frames ná het daadwerkelijke vertrek, bij 60 fps
+zo'n 50 ms. Die vertraging is de prijs voor niet-afgaan op elke oefenswing. **Houd daarom
+een doorlopende videobuffer aan** en start niet met opnemen op de trigger.
+
+Let ook op `armAfterMs = 3000`: een slag binnen 3 seconden na plaatsing geeft géén
+trigger. Op een driving range waar in hoog tempo geslagen wordt is dat mogelijk te lang —
+het is instelbaar.
+
+## De kleurvraag: is zwart-wit de juiste weergave?
+
+Kort antwoord: **ja, helderheid als basis, kleur als bevestiging — niet omgekeerd.**
+
+Waarom helderheid de basis blijft:
+
+- Een witte of gele bal heeft prima luma-contrast met gras. Luma is
+  `0,299R + 0,587G + 0,114B`, dus een gele bal (R en G hoog) komt op ~89% van vol uit,
+  een witte op 100%, tegen middengrijs voor gras.
+- **Chroma is in 4:2:0 halve resolutie.** Een bal van 25 px is in de U/V-vlakken maar
+  ~12 px. Alle geometrie die een bal van een clubkop onderscheidt — de ronde omtrek, de
+  radius, de harmonischen — heeft juist volle resolutie nodig.
+- Een kleurmasker alleen (wit-of-geel, niet-groen, genoeg verschil met de achtergrond)
+  vindt élke wit/gele vlek van de juiste grootte: een witte schoen, een tee, de chromen
+  clubface, een sticker op de mat. De rondheidstoetsen zijn wat die eruit gooien, en die
+  werken op luma.
+
+Waar kleur wél echt iets toevoegt, en waarvoor het hier is ingebouwd:
+
+- **Schaduwen.** Dit is het sterkste argument en direct relevant voor een golfswing: de
+  schaduw van de speler en van de club vegen over de detectiearea. Een harde schaduw
+  verandert de helderheid enorm en de kleur nauwelijks. Voor de vraag "ziet deze plek er
+  weer als gras uit?" — precies de vraag waar de launch-trigger op hangt — is chroma
+  daardoor veel betrouwbaarder dan luma.
+- Fel bezonnen gras is helder maar blijft groen, dus het kan zich niet als witte bal
+  voordoen.
+- Een gele bal op droog, bleek gras kan weinig helderheidscontrast hebben en veel
+  kleurcontrast.
+
+Zo is het geïmplementeerd: `ColorModel` leert bij kalibratie twee punten in het (U,V)-vlak
+— de balkleur en de achtergrondkleur uit een ring om de bal — plus de afstand ertussen.
+Die afstand beslist zelf of kleur bruikbaar is: bij een witte bal op beton of een
+monochrome scene komt hij laag uit, `usable()` wordt false en de tracker draait stil verder
+op helderheid alleen. Kleur mag het helderheidsoordeel **modereren, nooit overrulen**.
+
+Praktisch: geef `ChromaPlanes` mee als je het hebt (het kost vrijwel niets, je wrapt de
+ByteBuffers die de camera al gaf, geen Bitmap-conversie, geen allocatie per frame). Werkt
+het zonder ook? Ja. Wordt het beter mét, buiten in de zon met bewegende schaduwen?
+Vermoedelijk wel, en dat is precies waar de gele/witte-bal-op-groen-situatie zit.
+
+Wat ik **niet** heb overgenomen uit het eerdere voorstel, en waarom: een binair
+kleurmasker als *primaire* detectie (wit OF geel, EN niet-groen, dan grootste regio) laat
+de beslissing hangen aan kleurdrempels op halve resolutie, en gooit de rondheidstoetsen
+weg die nu juist de club, de schoen en de schaduw tegenhouden. De grootte/compactheid/
+positie-checks uit dat voorstel zitten er al in, maar op de volle-resolutie luma-contour
+en met een geleerde referentie erachter.
+
+## Nieuwe instellingen
+
+In `BallTracker.Config`:
+
+| Veld | Standaard | Betekenis |
+|---|---|---|
+| `armAfterMs` | 3000 | hoe lang de bal stabiel moet liggen voor er getriggerd kan worden |
+| `launchHoldMs` | 1000 | hoe lang "gelanceerd" blijft staan |
+| `launchConfirmFrames` | 3 | frames "bal weg + achtergrond terug" voor de trigger |
+| `maxInterruptionMs` | 1200 | hoe lang een onderbreking mag duren voor het opgeven |
+| `absentFramesToInterrupt` | 2 | één gemist frame verandert nooit de toestand |
+| `maxGainSlewForLaunch` | 0,012 | hoe rustig het licht moet zijn om "achtergrond terug" te vertrouwen |
+| `presentThreshold` / `absentThreshold` | 0,50 / 0,34 | hysterese |
+| `realignEveryNFrames` | 8 | hoe vaak de uitlijning wordt vernieuwd |
+
+In `DetectorConfig`: `verifyWindowFactor`, `maxDriftFactor`, `maxGainStepPerFrame`,
+`maxOffsetStepPerFrame`.
+
+## Testresultaat stream
+
+`SequenceSelfTest` speelt scenario's op 60 fps met continue statiefbeweging:
+
+```
+[OK] normale swing            bal geplaatst, addresseren, oefenswing over de bal,
+                              addresseren, slag -> precies 1 trigger, 4 frames na de slag
+[OK] alleen oefenswings       4x club over de bal -> 0 triggers, label blijft staan
+[OK] schaduw over de bal      harde schaduwrand (45% donkerder) over de bal -> 0 triggers
+[OK] slag voor het armen      slag na 1 s -> 0 triggers (bewust)
+[OK] bal blijvend afgedekt    club blijft liggen -> 0 triggers, valt terug op zoeken
+snelheid: 6,6 ms per frame in ARMED
+```
+
+15 van 15 checks. Draaien:
+`javac -d build $(find src -name '*.java') && java -cp build nl.spheredetect.SequenceSelfTest`
+
+## Grenzen van de streamlogica — eerlijk
+
+- **Een getopte bal die binnen de detectiearea blijft liggen** geeft een trigger op de oude
+  plek (de bal was immers geraakt) en armt daarna opnieuw op de nieuwe plek. Of dat gewenst
+  is, is een productbeslissing.
+- **Presence kan af en toe één frame wegvallen** terwijl de belichtingscorrectie zich
+  herstelt van iets dat net langs kwam. Dat verandert de toestand niet
+  (`absentFramesToInterrupt`) en is niet zichtbaar in het label, maar je ziet het wel in de
+  debugcijfers. Niet verontrustend.
+- **De schaduwtest is streng maar synthetisch.** Een echte harde schaduwrand die precies
+  op het moment van de slag over de bal veegt, is de moeilijkste combinatie die er is: dan
+  vallen "bal weg" en "licht beweegt" samen en wordt de trigger uitgesteld tot het licht
+  rustig is. Dat is de veilige kant, maar het kan de trigger een paar frames vertragen.
+- **De launch-trigger vereist ARMED.** Dat is zo gevraagd en het is ook wat spurieuze
+  triggers tegenhoudt, maar het betekent dat de eerste bal na het opstarten pas na
+  `armAfterMs` bruikbaar is.
+- Meet met echte beelden na. Verwacht dat `armAfterMs`, `maxGainSlewForLaunch` en
+  `backgroundThreshold` de velden zijn die je wilt bijstellen; bouw het debugscherm zodat
+  `Update.toString()` en `LockedBallVerifier.Verdict` zichtbaar zijn.

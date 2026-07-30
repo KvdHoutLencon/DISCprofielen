@@ -114,6 +114,25 @@ public final class DetectorConfig {
     /** Dominance at which the confidence contribution saturates. */
     public double goodRadiusDominance = 1.8;
 
+    // ---- locked verification (live stream) ----------------------------------
+
+    /**
+     * Half size of the window examined around a locked ball, as a multiple of its radius.
+     * Must cover the contour search band (1.45 r) plus enough background to estimate the
+     * illumination and to notice a club arriving.
+     */
+    public double verifyWindowFactor = 2.6;
+    /** A locked ball may be re-found this far away (times its radius) and still be it. */
+    public double maxDriftFactor = 0.9;
+    /**
+     * How fast the illumination correction may change between frames while verifying a
+     * locked ball. Deliberately slow: it must be able to follow a cloud passing over, but
+     * NOT a shadow edge sweeping through the window in a few frames, because absorbing
+     * that would make a shadowed ball look like a departed one.
+     */
+    public double maxGainStepPerFrame = 0.05;
+    public double maxOffsetStepPerFrame = 5.0;
+
     /** Fall back to a reference-free search when registration fails (riskier). */
     public boolean allowReferenceFreeFallback = false;
 
@@ -154,6 +173,10 @@ public final class DetectorConfig {
         c.minContrastRatio = minContrastRatio;
         c.minRadiusDominance = minRadiusDominance;
         c.goodRadiusDominance = goodRadiusDominance;
+        c.verifyWindowFactor = verifyWindowFactor;
+        c.maxDriftFactor = maxDriftFactor;
+        c.maxGainStepPerFrame = maxGainStepPerFrame;
+        c.maxOffsetStepPerFrame = maxOffsetStepPerFrame;
         c.allowReferenceFreeFallback = allowReferenceFreeFallback;
         c.reportedCandidates = reportedCandidates;
         c.keepDebugImages = keepDebugImages;

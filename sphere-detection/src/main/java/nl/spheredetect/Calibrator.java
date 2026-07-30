@@ -53,6 +53,13 @@ public final class Calibrator {
          * stray edges from being mistaken for a ball.
          */
         public boolean expectPartialIllumination = true;
+        /**
+         * Optional colour planes of the POSITIVE frame. When supplied, the ball and
+         * background colours are learned and later used to corroborate the brightness
+         * verdict - most usefully to tell a launched ball (grass is back) from a covered
+         * one (a club is there), which brightness alone confuses with a passing shadow.
+         */
+        public ChromaPlanes positiveChroma;
     }
 
     public static final class Output {
@@ -202,6 +209,11 @@ public final class Calibrator {
                 ? Math.max(cfg.minArcDeg, Math.min(80, fromCalibration))
                 : fromCalibration;
 
+        // ---- 8b. colour of ball and background --------------------------------
+        if (in.positiveChroma != null) {
+            cal.color = ColorModel.learn(in.positiveChroma, fcx, fcy, fr);
+        }
+
         // ---- 9. decision threshold -------------------------------------------
         cal.scoreThreshold = 0.0;
         SphereDetector det = new SphereDetector(in.reference, cal, cfg);
@@ -264,6 +276,7 @@ public final class Calibrator {
                .append(", drempel ")
                .append(String.format(java.util.Locale.US, "%.2f", thr))
                .append('.');
+            if (in.positiveChroma != null) msg.append(' ').append(cal.color.describe()).append('.');
         }
         cal.notes = (ev.arcDeg < 300 ? "contour deels zichtbaar (tegenlicht/maanvorm)" : "volledige contour")
                 + (in.expectPartialIllumination ? ", maanvorm toegestaan" : ", volledige omtrek vereist");

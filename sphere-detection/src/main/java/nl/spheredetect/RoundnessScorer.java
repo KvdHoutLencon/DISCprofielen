@@ -128,12 +128,21 @@ public final class RoundnessScorer {
             wSum += wt[i];
         }
         s.score = Math.exp(logSum / wSum);
-        if (!s.gatesPassed) s.score = Math.min(s.score, 0.35);
+        if (!s.gatesPassed) s.score = Math.min(s.score, GATED_OUT_SCORE);
         return s;
     }
 
     /** Sub-score floor: the value a metric sitting exactly at its gate is worth. */
     private static final double SCORE_FLOOR = 0.35;
+
+    /**
+     * Ceiling imposed on a candidate that failed one of the gates. Anything at or below
+     * this is "not the calibrated ball", whatever the sub-scores said. Callers that turn
+     * the score into a present/absent decision must keep their threshold clear of it -
+     * see {@link LockedBallVerifier}, which scales failed candidates further down rather
+     * than relying on a threshold happening to fall on the right side of this number.
+     */
+    public static final double GATED_OUT_SCORE = 0.35;
 
     /** Maps gate -> SCORE_FLOOR and good -> 1, for metrics where higher is better. */
     private static double ramp(double v, double gate, double good) {

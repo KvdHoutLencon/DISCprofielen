@@ -46,6 +46,30 @@ public final class Calibration {
     public boolean valid = false;
     public String notes = "";
 
+    /**
+     * Ball and background colour, when the calibration frames carried chroma. Used only
+     * to corroborate the brightness verdict; see {@link ColorModel}.
+     */
+    public ColorModel color = new ColorModel();
+
+    /**
+     * A copy with the contrast-dependent thresholds scaled to the illumination currently
+     * measured. Everything the ball shows - the strength of its contour, the amplitude of
+     * its difference from the background - scales with the light falling on it, so under
+     * a cloud, at gain 0.6, the same ball legitimately produces 40% weaker edges. Judging
+     * it against thresholds learned in full sun would lose it. Sizes and shape limits are
+     * left alone: geometry does not care about brightness.
+     */
+    public Calibration scaledForIllumination(double gain) {
+        double g = Stats.clamp(gain, 0.35, 2.5);
+        if (Math.abs(g - 1) < 0.02) return this;
+        Calibration c = fromProperties(toProperties());
+        c.edgeThreshold = edgeThreshold * g;
+        c.learnedContrast = learnedContrast * g;
+        c.color = color;
+        return c;
+    }
+
     public double radiusMargin() {
         return (rMax - rMin) / 2.0;
     }
@@ -69,6 +93,7 @@ public final class Calibration {
         p.setProperty("negativeScore", Double.toString(negativeScore));
         p.setProperty("valid", Boolean.toString(valid));
         p.setProperty("notes", notes == null ? "" : notes);
+        if (color != null) color.save(p);
         return p;
     }
 
@@ -89,6 +114,7 @@ public final class Calibration {
         c.negativeScore = d(p, "negativeScore", c.negativeScore);
         c.valid = Boolean.parseBoolean(p.getProperty("valid", "false"));
         c.notes = p.getProperty("notes", "");
+        c.color = ColorModel.load(p);
         return c;
     }
 
@@ -116,7 +142,8 @@ public final class Calibration {
         sb.append("\"positiveScore\":").append(fmt(positiveScore)).append(',');
         sb.append("\"negativeScore\":").append(fmt(negativeScore)).append(',');
         sb.append("\"valid\":").append(valid).append(',');
-        sb.append("\"notes\":\"").append(notes == null ? "" : notes.replace("\"", "'")).append('"');
+        sb.append("\"notes\":\"").append(notes == null ? "" : notes.replace("\"", "'")).append("\",");
+        sb.append("\"color\":\"").append(color == null ? "-" : color.describe()).append('"');
         sb.append('}');
         return sb.toString();
     }

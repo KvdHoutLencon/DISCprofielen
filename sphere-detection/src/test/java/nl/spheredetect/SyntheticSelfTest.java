@@ -284,7 +284,7 @@ public final class SyntheticSelfTest {
     // ------------------------------------------------------------------ rendering
 
     /** Camera pose + illumination + noise for one synthetic sampling frame. */
-    private static final class Scene {
+    static final class Scene {
         final double scale, angleDeg, tx, ty, gain, offset, noise;
         final long seed;
 
@@ -314,15 +314,15 @@ public final class SyntheticSelfTest {
         }
     }
 
-    private interface Shape {
+    interface Shape {
         void draw(GrayImage img);
     }
 
-    private static final double[] LIT = norm(0.35, -0.35, 0.87);
+    static final double[] LIT = norm(0.35, -0.35, 0.87);
     private static final double[] BACKLIT = norm(0.92, -0.22, -0.32);
     private static final double[] BACKLIT_2 = norm(-0.55, 0.72, -0.42);
 
-    private static double[] norm(double x, double y, double z) {
+    static double[] norm(double x, double y, double z) {
         double n = Math.sqrt(x * x + y * y + z * z);
         return new double[]{x / n, y / n, z / n};
     }
@@ -334,7 +334,7 @@ public final class SyntheticSelfTest {
      *                background value: this is the hard back-lit case where the object's
      *                silhouette is invisible and only a crescent betrays it.
      */
-    private static final class Sphere implements Shape {
+    static final class Sphere implements Shape {
         final double cx, cy, r;
         final double[] light;
         final boolean rimOnly;
@@ -375,7 +375,7 @@ public final class SyntheticSelfTest {
         }
     }
 
-    private static final class Rect implements Shape {
+    static final class Rect implements Shape {
         final double cx, cy, w, h, delta;
 
         Rect(double cx, double cy, double w, double h, double delta) {
@@ -446,7 +446,7 @@ public final class SyntheticSelfTest {
     }
 
     /** Textured background: multi-scale structure plus a few hard edges. */
-    private static GrayImage buildReference(int w, int h, long seed) {
+    static GrayImage buildReference(int w, int h, long seed) {
         GrayImage img = new GrayImage(w, h);
         Random rnd = new Random(seed);
         double[] phase = new double[12];

@@ -343,3 +343,24 @@ meest toe doen:
   shutter, autofocus-ademen, JPEG-artefacten, automatische witbalans. Meet met echte
   beelden na en verwacht dat vooral `kSigma`, `minContrastRatio` en de maatmarge
   bijstelling nodig hebben.
+
+---
+
+## 9. Camerastream: bal volgen en de launch-trigger
+
+Voor een live stream is `BallTracker` de ingang in plaats van `SphereDetector`. Zie
+`AGENT-BRIEFING.md` voor de volledige uitleg; in het kort:
+
+- `CONFIRMING`, `ARMED` en `INTERRUPTED` melden alle drie `"bal gedetecteerd"`, zodat een
+  korte onderbreking het label niet laat flikkeren.
+- Een launch is niet "bal niet meer gedetecteerd" maar "bal niet meer gedetecteerd **en**
+  de achtergrond is terug **en** het licht staat stil". Dat is wat een slag onderscheidt
+  van een club die er even voor hangt — die twee zijn qua zichtbaarheid identiek.
+- Zodra de bal vastligt wordt alleen een venster van ~2,6 × radius rond de bekende positie
+  bekeken. Daarmee is de club buiten beeld per constructie, en kost een frame 6,6 ms in
+  plaats van 44 ms.
+- Kleur (`ChromaPlanes`, `ColorModel`) is optioneel en bevestigt alleen; helderheid blijft
+  de basis omdat chroma in 4:2:0 halve resolutie heeft. Kleur is vooral waardevol tegen
+  bewegende schaduwen.
+
+`SequenceSelfTest` dekt vijf golfscenario's op 60 fps met statiefbeweging: 15 van 15 checks.
