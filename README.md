@@ -56,6 +56,17 @@ Alle variabele invoer staat op schuifregelaars; grafiek, kerncijfers, gevoelighe
 - **Break-evengrafiek**: omzet en totale kosten als functie van het totaal aantal FTE. Op het snijpunt staat een label met omzetdoel, FTE in consultancy, FTE in projecten en FTE totaal.
 - **Gevoeligheidsanalyse**: welke invoer het break-evenpunt (of het bedrijfsresultaat) het sterkst beweegt, gesorteerd op impact, per stap van één procentpunt / €5 / €5.000 afhankelijk van de invoer.
 - **Scenariotabel**: dezelfde kolomopzet als het rekenblad, met de break-evenregel gemarkeerd.
+- **Exporteren en importeren als CSV**: sla een scenario op, mail het door, of lees het later terug.
+
+## Scenario's opslaan en terughalen
+
+**Exporteer CSV** downloadt `breakeven-invoer-<datum>.csv` met alle invoerwaarden. Het bestand is puntkomma-gescheiden met Nederlandse decimaaltekens en heeft een UTF-8 BOM, dus het valt in Excel meteen goed in kolommen. Onder de invoer staat een blok met de bijbehorende uitkomsten (break-even FTE, omzetdoel, gemiddelde tarieven, dekkingsbijdrage); dat blok is puur ter documentatie.
+
+**Importeer CSV** leest zo'n bestand weer in en zet alle schuifregelaars en invoervelden terug op die stand.
+
+De import matcht op de kolom `sleutel` en leest de kolom `waarde`; de overige kolommen zijn er voor de leesbaarheid. Daardoor kun je het bestand met de hand of in Excel bewerken zolang die twee kolommen blijven staan — de volgorde van de regels maakt niet uit, en regels zonder herkenbare sleutel (zoals het uitkomstenblok) worden overgeslagen. Ontbrekende sleutels houden hun huidige waarde. Na afloop meldt het dashboard hoeveel waarden zijn ingelezen en hoeveel regels zijn overgeslagen of onleesbaar waren.
+
+Getallen worden zowel in Nederlandse als Engelse notatie gelezen (`1.600`, `1600`, `0,5`, `0.5`, `€ 150.000`, `-12%`). Bij een enkele punt met drie cijfers erachter wint de Nederlandse lezing: `1.600` is zestienhonderd, `1.6` is anderhalf. Senioriteitsmixen worden na het inlezen teruggebracht op 100%, zodat een met de hand bijgewerkt bestand niet stiekem scheef gaat staan.
 
 ## Rekenmodel
 

@@ -119,6 +119,14 @@ button.ghost {
 button.ghost:hover { background: var(--surface-3); color: var(--ink); }
 button.ghost:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; justify-content: flex-end; }
+.actions .status {
+  flex: 1 0 100%; margin: 0; text-align: right; min-height: 1.3em;
+  font-size: 11.5px; color: var(--ink-muted);
+}
+.actions .status.ok { color: var(--pos); }
+.actions .status.err { color: var(--neg); }
+
 .shell { display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 22px; align-items: start; }
 @media (max-width: 1080px) {
   .shell { grid-template-columns: minmax(0, 1fr); }
@@ -315,7 +323,13 @@ table.data tr.be td:first-child { font-family: var(--sans); }
       <p>Verschuif een schuifregelaar en kijk direct wat er met het break-evenpunt, de grafiek en het bedrijfsresultaat gebeurt. Vaste kosten typ je in als bedrag.</p>
     </div>
     <div class="spacer"></div>
-    <button class="ghost" id="btn-reset" type="button">Terug naar uitgangswaarden</button>
+    <div class="actions">
+      <button class="ghost" id="btn-import" type="button">Importeer CSV</button>
+      <button class="ghost" id="btn-export" type="button">Exporteer CSV</button>
+      <button class="ghost" id="btn-reset" type="button">Terug naar uitgangswaarden</button>
+      <input type="file" id="file-import" accept=".csv,text/csv" hidden>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </div>
   </header>
 
   <div class="shell">
@@ -726,7 +740,7 @@ function buildRail() {
       });
     }
     num.addEventListener("input", function () {
-      var v = parseLocaleNumber(num.value);
+      var v = parseNum(num.value);
       if (v === null) return;
       setValueOn(state, it.key, v);
       syncGroupOf(it.key, num);
@@ -751,9 +765,30 @@ function controlHtml(it) {
     slider + "</div>";
 }
 
-function parseLocaleNumber(txt) {
-  var t = String(txt).replace(/[\s .€%]/g, "").replace(",", ".");
-  if (t === "" || t === "-") return null;
+/* Leest een getal in Nederlandse of Engelse notatie: "1.600", "1600", "0,5", "0.5",
+   "€ 150.000", "-12%". Geeft null bij iets onleesbaars. */
+function parseNum(txt) {
+  var t = String(txt).replace(/[\s\u20ac%]/g, "");
+  if (t === "" || t === "-" || t === "+") return null;
+
+  /* Nederlandse conventie: de komma scheidt decimalen, de punt duizendtallen.
+     Een decimaalteken komt hoogstens één keer voor, dus een herhaald teken is
+     altijd groepering — daarmee wordt ook "1,234,567.89" goed gelezen. */
+  var dots = (t.match(/\./g) || []).length;
+  var commas = (t.match(/,/g) || []).length;
+
+  if (dots && commas) {
+    if (t.lastIndexOf(",") > t.lastIndexOf(".")) t = t.replace(/\./g, "").replace(",", ".");
+    else t = t.replace(/,/g, "");
+  } else if (commas > 1) {
+    t = t.replace(/,/g, "");
+  } else if (commas === 1) {
+    t = t.replace(",", ".");
+  } else if (dots > 1) {
+    t = t.replace(/\./g, "");
+  } else if (dots === 1 && /^-?\d{1,3}\.\d{3}$/.test(t)) {
+    t = t.replace(".", "");        /* "1.600" is zestienhonderd, "1.6" niet */
+  }
   var v = Number(t);
   return isFinite(v) ? v : null;
 }
@@ -1129,7 +1164,188 @@ function renderTable(r) {
 }
 
 /* =======================================================================
-   9. RENDERLUS
+   9. CSV-EXPORT EN -IMPORT
+   =======================================================================
+   Eén regel per invoer, puntkomma-gescheiden en met Nederlandse decimaaltekens,
+   zodat het bestand in Excel meteen goed in kolommen valt. De kolom "sleutel" is
+   waar de import op matcht; de rest is er voor de leesbaarheid. Onder de invoer
+   staat een blok uitkomsten — die sleutels kent de import niet, dus die worden
+   bij het teruglezen genegeerd.
+======================================================================= */
+
+var SEP = ";";
+
+function csvField(v) {
+  var s = String(v == null ? "" : v);
+  return /[";\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+function csvLine(cells) { return cells.map(csvField).join(SEP); }
+
+/* Waarden schrijven we met een decimaalkomma en zonder duizendtalscheiding:
+   ondubbelzinnig voor Excel en voor onze eigen parser. */
+function csvNum(v, dec) {
+  if (!isFinite(v)) return "";
+  var s = v.toFixed(dec == null ? 4 : dec);
+  if (s.indexOf(".") >= 0) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  return s.replace(".", ",");
+}
+
+function buildCsv() {
+  var r = compute(state);
+  var lines = [];
+  lines.push(csvLine(["Break-even dashboard - invoer"]));
+  lines.push(csvLine(["Geexporteerd", new Date().toLocaleString("nl-NL")]));
+  lines.push("");
+  lines.push(csvLine(["sleutel", "groep", "invoer", "eenheid", "waarde"]));
+
+  ALL_ITEMS.forEach(function (it) {
+    lines.push(csvLine([it.key, it.group, it.label, it.unit, csvNum(state[it.key])]));
+  });
+
+  var sc = r.scenario;
+  lines.push("");
+  /* Eerste kolom leeg laten: de import slaat sleutelloze regels stilzwijgend over. */
+  lines.push(csvLine(["", "", "Uitkomsten (ter info - worden bij importeren genegeerd)"]));
+  lines.push(csvLine(["", "", "uitkomst", "eenheid", "waarde"]));
+  [
+    ["FTE bij break-even", "FTE", r.beFTE, 2],
+    ["FTE consultancy bij break-even", "FTE", r.beFteC, 2],
+    ["FTE projecten bij break-even", "FTE", r.beFteP, 2],
+    ["Omzetdoel bij break-even", "EUR", r.beRevenue, 0],
+    ["Effectieve uren per FTE - consultancy", "uur", r.effC, 1],
+    ["Effectieve uren per FTE - projecten", "uur", r.effP, 1],
+    ["Gemiddeld tarief - consultancy", "EUR/uur", r.rateC, 2],
+    ["Gemiddeld tarief - projecten", "EUR/uur", r.rateP, 2],
+    ["Vaste kosten totaal", "EUR", r.fixed, 0],
+    ["Dekkingsbijdrage", "%", r.cm * 100, 2],
+    ["Bedrijfsresultaat bij scenario-omzet", "%", sc.marge * 100, 2],
+    ["Resultaat bij scenario-omzet", "EUR", sc.resultaat, 0],
+    ["FTE totaal bij scenario-omzet", "FTE", sc.fte, 2]
+  ].forEach(function (row) {
+    lines.push(csvLine(["", "", row[0], row[1], csvNum(row[2], row[3])]));
+  });
+
+  return lines.join("\r\n") + "\r\n";
+}
+
+function exportCsv() {
+  var d = new Date();
+  var stamp = d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+  /* BOM zodat Excel het bestand als UTF-8 opent */
+  var blob = new Blob(["\uFEFF" + buildCsv()], { type: "text/csv;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = "breakeven-invoer-" + stamp + ".csv";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  setStatus("Geexporteerd als " + a.download + ".", "ok");
+}
+
+/* Kleine CSV-lezer: puntkomma of komma als scheidingsteken, aanhalingstekens
+   met verdubbelde quotes erin, CRLF of LF als regeleinde. */
+function parseCsv(text) {
+  text = text.replace(/^\uFEFF/, "");
+  var sep = guessSep(text);
+  var rows = [], row = [], cell = "", quoted = false;
+
+  for (var i = 0; i < text.length; i++) {
+    var c = text[i];
+    if (quoted) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { cell += '"'; i++; }
+        else quoted = false;
+      } else cell += c;
+    } else if (c === '"') {
+      quoted = true;
+    } else if (c === sep) {
+      row.push(cell); cell = "";
+    } else if (c === "\n") {
+      row.push(cell); rows.push(row); row = []; cell = "";
+    } else if (c !== "\r") {
+      cell += c;
+    }
+  }
+  row.push(cell);
+  if (row.length > 1 || row[0] !== "") rows.push(row);
+  return rows;
+
+  function guessSep(t) {
+    var head = t.split(/\r?\n/).slice(0, 12).join("\n");
+    return (head.split(";").length >= head.split(",").length) ? ";" : ",";
+  }
+}
+
+function importCsv(text) {
+  var rows = parseCsv(text);
+
+  /* Zoek de kop met "sleutel" en "waarde"; ontbreekt die, dan vallen we terug
+     op de eerste twee kolommen. */
+  var keyCol = 0, valCol = -1, start = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var lower = rows[i].map(function (c) { return c.trim().toLowerCase(); });
+    var k = lower.indexOf("sleutel"), v = lower.indexOf("waarde");
+    if (k >= 0 && v >= 0) { keyCol = k; valCol = v; start = i + 1; break; }
+  }
+  if (valCol < 0) { keyCol = 0; valCol = 1; start = 0; }
+
+  var next = Object.assign({}, state);
+  var applied = 0, unknown = 0, bad = 0;
+
+  for (var j = start; j < rows.length; j++) {
+    var key = (rows[j][keyCol] || "").trim();
+    if (!key) continue;
+    if (!Object.prototype.hasOwnProperty.call(DEFAULTS, key)) { unknown++; continue; }
+    var num = parseNum(rows[j][valCol]);
+    if (num === null) { bad++; continue; }
+    /* Rechtstreeks toewijzen: een geexporteerde mix telt al op tot 100, en
+       herbalanceren tijdens het inlezen zou de andere waarden juist verdraaien. */
+    next[key] = num;
+    applied++;
+  }
+
+  if (!applied) {
+    setStatus("Geen bruikbare waarden gevonden. Verwacht een kolom “sleutel” en een kolom “waarde”.", "err");
+    return;
+  }
+
+  /* Mixen na afloop terugbrengen op 100%, voor het geval het bestand met de hand
+     is bijgewerkt. */
+  Object.keys(MIX_GROUPS).forEach(function (g) {
+    var keys = MIX_GROUPS[g];
+    var sum = keys.reduce(function (a, k) { return a + next[k]; }, 0);
+    if (sum > 0 && Math.abs(sum - 100) > 1e-6) {
+      keys.forEach(function (k) { next[k] = next[k] * 100 / sum; });
+    }
+  });
+
+  state = next;
+  Object.keys(state).forEach(function (k) { if (inputEls[k]) syncInput(k); });
+  render();
+
+  var missing = ALL_ITEMS.length - applied;
+  var msg = applied + (applied === 1 ? " waarde" : " waarden") + " ingelezen";
+  if (missing > 0) msg += ", " + missing + " ongewijzigd gelaten";
+  if (bad) msg += ", " + bad + (bad === 1 ? " onleesbare waarde" : " onleesbare waarden");
+  if (unknown) msg += ", " + unknown + (unknown === 1 ? " onbekende regel" : " onbekende regels") + " overgeslagen";
+  setStatus(msg + ".", (missing > 0 || bad || unknown) ? "" : "ok");
+}
+
+var statusEl = document.getElementById("status");
+var statusTimer = null;
+function setStatus(msg, kind) {
+  statusEl.textContent = msg;
+  statusEl.className = "status " + (kind || "");
+  clearTimeout(statusTimer);
+  statusTimer = setTimeout(function () { statusEl.textContent = ""; statusEl.className = "status"; }, 8000);
+}
+
+/* =======================================================================
+   10. RENDERLUS
    ======================================================================= */
 var pending = false;
 function schedule() {
@@ -1160,6 +1376,24 @@ document.getElementById("btn-reset").addEventListener("click", function () {
   state = Object.assign({}, DEFAULTS);
   Object.keys(state).forEach(function (k) { if (inputEls[k]) syncInput(k); });
   render();
+  setStatus("Alle invoer terug op de uitgangswaarden.", "");
+});
+
+document.getElementById("btn-export").addEventListener("click", exportCsv);
+
+var fileInput = document.getElementById("file-import");
+document.getElementById("btn-import").addEventListener("click", function () { fileInput.click(); });
+fileInput.addEventListener("change", function () {
+  var f = fileInput.files && fileInput.files[0];
+  if (!f) return;
+  var reader = new FileReader();
+  reader.onload = function () {
+    try { importCsv(String(reader.result)); }
+    catch (err) { setStatus("Dit bestand kon niet gelezen worden: " + err.message, "err"); }
+  };
+  reader.onerror = function () { setStatus("Het bestand kon niet geopend worden.", "err"); };
+  reader.readAsText(f);
+  fileInput.value = "";   /* zodat hetzelfde bestand opnieuw gekozen kan worden */
 });
 document.getElementById("btn-more").addEventListener("click", function () {
   showAll = !showAll;
