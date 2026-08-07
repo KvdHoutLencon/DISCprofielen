@@ -41,3 +41,37 @@ Naam, Functie, Datum, Q1_meest, Q1_minst, Q2_meest, Q2_minst, ..., Q20_meest, Q2
 ## Verzamelen en verwerken
 
 Verzamel de gedownloade CSV-bestanden van alle medewerkers (bijv. via een gedeelde map of e-mail) en upload ze vervolgens in de tool waarin je de individuele DISC-profielrapportages genereert. Omdat elk databestand exact dezelfde kolomvolgorde heeft, kunnen de CSV's zonder verdere bewerking worden ingelezen.
+
+---
+
+# Break-even rekendashboard
+
+`breakeven-dashboard.html` — een zelfstandige HTML-versie van het capaciteits- en break-evenrekenblad (`test_excel.xlsx`). Openen door het bestand direct in een browser te dubbelklikken; geen server, geen dependencies.
+
+## Wat het doet
+
+Alle variabele invoer staat op schuifregelaars; grafiek, kerncijfers, gevoeligheidsanalyse en scenariotabel bewegen live mee tijdens het verschuiven. Vaste kosten typ je in als bedrag. Elke schuifregelaar heeft daarnaast een invoerveld, zodat je ook exacte waarden kunt intypen.
+
+- **Kerncijfer**: het aantal FTE bij het break-evenpunt, met de verdeling over consultancy en projecten.
+- **Break-evengrafiek**: omzet en totale kosten als functie van het totaal aantal FTE. Op het snijpunt staat een label met omzetdoel, FTE in consultancy, FTE in projecten en FTE totaal.
+- **Gevoeligheidsanalyse**: welke invoer het break-evenpunt (of het bedrijfsresultaat) het sterkst beweegt, gesorteerd op impact, per stap van één procentpunt / €5 / €5.000 afhankelijk van de invoer.
+- **Scenariotabel**: dezelfde kolomopzet als het rekenblad, met de break-evenregel gemarkeerd.
+
+## Rekenmodel
+
+```
+effectieve uren per FTE   = urenbasis × (1 − indirecte tijd%)
+omzet per FTE             = gemiddeld tarief × effectieve uren
+FTE per euro omzet        = omzetaandeel ÷ omzet per FTE
+directe kosten per euro   = Σ afdelingen (FTE per euro × kosten per FTE)
+variabele kosten per euro = directe kosten per euro × (1 + variabele overhead%)
+break-even omzet          = vaste kosten ÷ (1 − variabele kosten per euro)
+break-even FTE            = break-even omzet × FTE per euro omzet
+```
+
+De uitkomsten zijn afgestemd op het rekenblad: voor de uitgangswaarden geeft het dashboard voor elk omzetdoel uit de oorspronkelijke tabel (€2,0 mln t/m €5,5 mln) exact dezelfde FTE, totale kosten, resultaat en bedrijfsresultaat.
+
+Twee bewuste afwijkingen van het rekenblad:
+
+- De drie percentages van een senioriteitsmix blijven samen altijd 100%: verschuif je er één, dan schuiven de andere twee evenredig mee. In het rekenblad moest dat handmatig kloppen.
+- Loopt de dekkingsbijdrage tot nul of lager (de omzet dekt de variabele kosten niet meer), dan is er geen break-evenpunt. Het dashboard meldt dat expliciet in plaats van een getal te tonen dat niets betekent.
